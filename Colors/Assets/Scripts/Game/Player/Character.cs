@@ -29,6 +29,7 @@ namespace Game.Player
             rgb2D = GetComponent<Rigidbody2D>();
             
             SetState(IdleState);
+            GameManager.Instance.DebugName();
         }
 
         // Update is called once per frame
@@ -60,7 +61,10 @@ namespace Game.Player
             m_CurrentState = newState;
             m_CurrentState.EnterState(this);
         }
-
+        
+        /// <summary>
+        /// This methods makes the character jump.
+        /// </summary>
         public void CharacterJump()
         {
             m_Ch2D.Move(PlayerInput.HorizontalInput * characterSpeed, false, true);
