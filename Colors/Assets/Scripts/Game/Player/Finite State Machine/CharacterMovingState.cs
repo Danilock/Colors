@@ -1,17 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Game.Player;
+using Game.Player.Finite_State_Machine;
 using UnityEngine;
 
-public class CharacterMovingState : MonoBehaviour
+public class CharacterMovingState : CharacterBaseState
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void EnterState(Character character)
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void Update(Character character)
+    {
+        
+    }
+
+    public override void FixedUpdate(Character character)
+    {
+        character.m_Ch2D.Move(PlayerInput.HorizontalInput * character.characterSpeed, false, false);
+
+        if (character.rgb2D.velocity.magnitude < .1f)
+        {
+            character.SetState(character.IdleState);
+        }
+    }
+
+    public override void ExitState(Character character)
     {
         
     }

@@ -11,6 +11,12 @@
             <e p="Player" t="Include">
               <e p="Character.cs" t="Include" />
               <e p="CharacterController2D.cs" t="Include" />
+              <e p="Finite State Machine" t="Include">
+                <e p="CharacterBaseState.cs" t="Include" />
+                <e p="CharacterIdleState.cs" t="Include" />
+                <e p="CharacterJumpState.cs" t="Include" />
+                <e p="CharacterMovingState.cs" t="Include" />
+              </e>
               <e p="PlayerInput.cs" t="Include" />
             </e>
           </e>

@@ -13,12 +13,17 @@ public class CharacterIdleState : CharacterBaseState
 
     public override void Update(Character character)
     {
-        //if(Input.GetButtonDown("Horizontal"))
+        
     }
 
     public override void FixedUpdate(Character character)
     {
-        
+        character.m_Ch2D.Move(PlayerInput.HorizontalInput * character.characterSpeed, false, false);
+
+        if (character.rgb2D.velocity.magnitude > .1f)
+        {
+            character.SetState(character.MovingState);
+        }
     }
 
     public override void ExitState(Character character)
