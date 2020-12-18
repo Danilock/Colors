@@ -8,6 +8,9 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Game" t="Include">
+            <e p="Color System" t="Include">
+              <e p="ColorManager.cs" t="Include" />
+            </e>
             <e p="Player" t="Include">
               <e p="Character.cs" t="Include" />
               <e p="CharacterController2D.cs" t="Include" />

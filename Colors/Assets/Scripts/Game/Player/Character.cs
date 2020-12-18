@@ -12,7 +12,7 @@ namespace Game.Player
 
         [FormerlySerializedAs("m_CharacterSpeed")] public float characterSpeed = 5f;
         [HideInInspector] public CharacterController2D m_Ch2D;
-        public Rigidbody2D rgb2D;
+        [HideInInspector] public Rigidbody2D rgb2D;
         public bool InUse { get; set; }
         #endregion
 
@@ -34,7 +34,6 @@ namespace Game.Player
         // Update is called once per frame
         void Update()
         {
-            Debug.Log(gameObject.name + m_CurrentState);
             if (InUse)
             {
                 m_CurrentState.Update(this);
@@ -60,6 +59,11 @@ namespace Game.Player
             
             m_CurrentState = newState;
             m_CurrentState.EnterState(this);
+        }
+
+        public void CharacterJump()
+        {
+            m_Ch2D.Move(PlayerInput.HorizontalInput * characterSpeed, false, true);
         }
     }
 }

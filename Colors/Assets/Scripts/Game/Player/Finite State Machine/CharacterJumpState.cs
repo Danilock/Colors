@@ -21,7 +21,10 @@ public class CharacterJumpState : CharacterBaseState
 
     public override void FixedUpdate(Character character)
     {
-        
+        if (character.m_Ch2D.m_Grounded)
+        {
+            character.SetState(character.IdleState);
+        }
     }
 
     public override void ExitState(Character character)

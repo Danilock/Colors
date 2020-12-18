@@ -13,7 +13,10 @@ public class CharacterMovingState : CharacterBaseState
 
     public override void Update(Character character)
     {
-        
+        if (Input.GetButtonDown("Jump"))
+        {
+            character.CharacterJump();
+        }
     }
 
     public override void FixedUpdate(Character character)
