@@ -2,17 +2,47 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInput : MonoBehaviour
+namespace Game.Player
 {
-    // Start is called before the first frame update
-    void Start()
+    public class PlayerInput : MonoBehaviour
     {
-        
-    }
+        [SerializeField] private Character[] m_Characters;
+        [SerializeField] private Character m_CurrentCharacter;
 
-    // Update is called once per frame
-    void Update()
-    {
+        private int m_IndexCharacter = 0;
+        public  static float HorizontalInput { get; private set; }
+
+        // Start is called before the first frame update
+        void Start()
+        {
+            m_CurrentCharacter = m_Characters[0];
+            m_CurrentCharacter.InUse = true;
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            HorizontalInput = Input.GetAxisRaw("Horizontal");
+            
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                m_IndexCharacter = (m_IndexCharacter + 1) % m_Characters.Length;
+                ChangeCharacter(m_Characters[m_IndexCharacter]);
+            }
+        }
         
+        [ContextMenu("Add Characters")]
+        void FindAllCharacters()
+        {
+            m_Characters = FindObjectsOfType<Character>();
+        }
+
+        void ChangeCharacter(Character newCharacter)
+        {
+            m_CurrentCharacter.InUse = false;//sets the actual character state to false
+
+            m_CurrentCharacter = newCharacter;//add the new character as the current one
+            m_CurrentCharacter.InUse = true;//put's it's state as true
+        }
     }
 }
