@@ -29,6 +29,19 @@ namespace Game.Player
                 m_IndexCharacter = (m_IndexCharacter + 1) % m_Characters.Length;
                 ChangeCharacter(m_Characters[m_IndexCharacter]);
             }
+            else if(Input.GetKeyDown(KeyCode.Q))
+            {
+                if (m_IndexCharacter > 0)
+                {
+                    m_IndexCharacter--;
+                }
+
+                else
+                {
+                    m_IndexCharacter = m_Characters.Length - 1;
+                }
+                ChangeCharacter(m_Characters[m_IndexCharacter]);
+            }
         }
         
         [ContextMenu("Add Characters")]
