@@ -22,6 +22,7 @@ public class CharacterMovingState : CharacterBaseState
     public override void FixedUpdate(Character character)
     {
         character.m_Ch2D.Move(PlayerInput.HorizontalInput * character.characterSpeed, false, false);
+        character.characterAnimator.SetFloat("Speed", Mathf.Abs(PlayerInput.HorizontalInput));
 
         if (character.rgb2D.velocity.magnitude < .1f)
         {

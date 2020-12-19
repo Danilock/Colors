@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Game.Color_System;
 using UnityEngine;
+using Cinemachine;
 
 namespace Game.Traps
 {
@@ -13,7 +14,6 @@ namespace Game.Traps
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                Debug.Log("Collided with player");
                 Destroy(other.gameObject);
             }
         }

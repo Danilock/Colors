@@ -25,6 +25,7 @@ public class CharacterIdleState : CharacterBaseState
 
         if (character.rgb2D.velocity.magnitude > .1f)
         {
+            character.characterAnimator.SetFloat("Speed", Mathf.Abs(PlayerInput.HorizontalInput));
             character.SetState(character.MovingState);
         }
     }

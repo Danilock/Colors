@@ -8,7 +8,7 @@ public class CharacterJumpState : CharacterBaseState
 {
     public override void EnterState(Character character)
     {
-        
+        character.m_Ch2D.CrouchSpeed /= 2;
     }
 
     public override void Update(Character character)
@@ -21,14 +21,11 @@ public class CharacterJumpState : CharacterBaseState
 
     public override void FixedUpdate(Character character)
     {
-        if (character.m_Ch2D.m_Grounded)
-        {
-            character.SetState(character.IdleState);
-        }
+        
     }
 
     public override void ExitState(Character character)
     {
-        
+        character.m_Ch2D.CrouchSpeed *= 2;
     }
 }

@@ -13,6 +13,7 @@ namespace Game.Player
         [FormerlySerializedAs("m_CharacterSpeed")] public float characterSpeed = 5f;
         [HideInInspector] public CharacterController2D m_Ch2D;
         [HideInInspector] public Rigidbody2D rgb2D;
+        [HideInInspector] public Animator characterAnimator;
         public bool InUse { get; set; }
         #endregion
 
@@ -27,6 +28,7 @@ namespace Game.Player
         {
             m_Ch2D = GetComponent<CharacterController2D>();
             rgb2D = GetComponent<Rigidbody2D>();
+            characterAnimator = GetComponent<Animator>();
             
             SetState(IdleState);
         }
@@ -34,6 +36,7 @@ namespace Game.Player
         // Update is called once per frame
         void Update()
         {
+            Debug.Log(m_CurrentState);
             if (InUse && GameManager.Instance.currentGameState == GameManager.GameState.InGame)
             {
                 m_CurrentState.Update(this);
