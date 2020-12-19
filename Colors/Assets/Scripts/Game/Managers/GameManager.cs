@@ -5,6 +5,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public enum GameState
+    {
+        Paused,
+        InGame,
+        Loading
+    }
+
+    public GameState currentGameState;
     private static GameManager _instance;
 
     public static GameManager Instance
@@ -21,10 +29,5 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         _instance = this;
-    }
-
-    public void DebugName()
-    {
-        Debug.Log("Hey I'm the GameManager");
     }
 }

@@ -29,13 +29,12 @@ namespace Game.Player
             rgb2D = GetComponent<Rigidbody2D>();
             
             SetState(IdleState);
-            GameManager.Instance.DebugName();
         }
 
         // Update is called once per frame
         void Update()
         {
-            if (InUse)
+            if (InUse && GameManager.Instance.currentGameState == GameManager.GameState.InGame)
             {
                 m_CurrentState.Update(this);
             }
@@ -43,7 +42,7 @@ namespace Game.Player
 
         private void FixedUpdate()
         {
-            if (InUse)
+            if (InUse && GameManager.Instance.currentGameState == GameManager.GameState.InGame)
             {
                 m_CurrentState.FixedUpdate(this);
             }
@@ -55,9 +54,8 @@ namespace Game.Player
         /// <param name="newState"></param>
         public void SetState(CharacterBaseState newState)
         {
-            if (m_CurrentState != null)
-                m_CurrentState.ExitState(this);
-            
+            m_CurrentState?.ExitState(this);
+
             m_CurrentState = newState;
             m_CurrentState.EnterState(this);
         }

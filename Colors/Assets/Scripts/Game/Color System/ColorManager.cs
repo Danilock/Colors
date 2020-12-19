@@ -8,14 +8,15 @@ namespace Game.Color_System
     {
         public enum objColor
         {
-            Red, Blue, Yellow
+            Red, Blue, Yellow, None
         }
 
         public objColor objectColor;
 
         private void Start()
         {
-            ChangeColor(objectColor);
+            if(objectColor != objColor.None)
+                ChangeColor(objectColor);
         }
 
         public void ChangeColor(objColor newColor)

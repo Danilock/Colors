@@ -4,12 +4,14 @@
     <e p="C:\Users\Dell\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Dell\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Colors.89963423.00" t="ExcludeRecursive" />
     <e p="C:\Users\Dell\Documents\GitHub\Colors-Hub\Colors" t="IncludeRecursive">
-      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Game" t="Include">
             <e p="Color System" t="Include">
               <e p="ColorManager.cs" t="Include" />
+            </e>
+            <e p="Events" t="Include">
+              <e p="PressKeyEvent.cs" t="Include" />
             </e>
             <e p="Managers" t="Include">
               <e p="GameManager.cs" t="Include" />
@@ -25,12 +27,24 @@
               </e>
               <e p="PlayerInput.cs" t="Include" />
             </e>
+            <e p="Traps" t="Include">
+              <e p="KillerTrap.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts.asmdef" t="Include" />
+        </e>
+        <e p="Tests" t="Include">
+          <e p="PlayMode Tests" t="Include">
+            <e p="KillerTrapTest.cs" t="Include" />
+            <e p="PlayMode Tests.asmdef" t="Include" />
           </e>
         </e>
       </e>
       <e p="Colors.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
+      <e p="PlayModeTests.csproj" t="IncludeRecursive" />
+      <e p="Scripts.csproj" t="IncludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
   </component>

@@ -20,7 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5f1e6b1-a8d1-4d00-9d20-2f091094c61d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Color System/ColorManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Color System/ColorManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +42,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterMovingState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tests/PlayMode Tests/KillerTrapTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Events/PressKeyEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterIdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Color System/ColorManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.3/Runtime/Behaviours/CinemachineTargetGroup.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -43,13 +55,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/PlayerBaseState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterBaseState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Color System/ColorManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterIdleState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterMovingState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterJumpState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Color System/ColorManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tests/PlayMode Tests/Tests/TrapKillerTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Events/PressKeyEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/Killer Trap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tests/PlayMode Tests/KillerTrapTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" />
       </list>
     </option>
   </component>
@@ -63,7 +80,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="discord-application" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -96,7 +113,7 @@
       <updated>1608259991309</updated>
       <workItem from="1608260046181" duration="2412000" />
       <workItem from="1608263820117" duration="4291000" />
-      <workItem from="1608303214531" duration="9768000" />
+      <workItem from="1608303214531" duration="16981000" />
     </task>
     <servers />
   </component>
@@ -128,9 +145,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="698" y="236" width="428" height="567" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608307320287" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1608306240199">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1608347794829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608306240199" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608347794829" />
   </component>
 </project>
