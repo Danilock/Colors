@@ -8,7 +8,8 @@ public class CharacterIdleState : CharacterBaseState
 {
     public override void EnterState(Character character)
     {
-        
+        character.characterAnimator.SetFloat("Speed", 0f);
+        character.rgb2D.velocity = Vector2.zero;
     }
 
     public override void Update(Character character)

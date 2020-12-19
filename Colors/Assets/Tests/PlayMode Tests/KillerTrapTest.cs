@@ -29,7 +29,7 @@ namespace Tests
             GameObject player = new GameObject("Player Clone");
             player.tag = "Player";
             ColorManager playerColor = player.AddComponent<ColorManager>();
-            playerColor.ChangeColor(ColorManager.objColor.Red);
+            playerColor.ChangeColor(ColorManager.objColor.Blue);
             player.AddComponent<BoxCollider2D>();
             player.AddComponent<Rigidbody2D>();
             
@@ -42,10 +42,10 @@ namespace Tests
 
             trap.transform.position = player.transform.position;
             
-            yield return new WaitForSeconds(1f);
-            
-            //The object(player) is suppose  to still alive
-            Assert.IsNotNull(player);
+            yield return new WaitForSeconds(.1f);
+
+            //The object(player) is suppose  to be dead
+            Assert.IsTrue(player == null);
             
         }
     }
