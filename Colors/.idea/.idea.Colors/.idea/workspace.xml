@@ -20,24 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5f1e6b1-a8d1-4d00-9d20-2f091094c61d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterIdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterIdleState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterJumpState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterJumpState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterMovingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterMovingState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Environments/Seasonal/Terrain_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Environments/Seasonal/Terrain_1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Environments/Seasonal/Terrain_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Environments/Seasonal/Terrain_2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Environments/Seasonal/Terrain_3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Environments/Seasonal/Terrain_3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Environments/Seasonal/Terrain_4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Environments/Seasonal/Terrain_4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Environments/Seasonal/Terrain_5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Environments/Seasonal/Terrain_5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Environments/Seasonal/Water.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Environments/Seasonal/Water.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Light Terrain/Light Terrain.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tilemaps/Light Terrain/Light Terrain.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +54,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Events/PressKeyEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/Killer Trap.cs" />
         <option value="$PROJECT_DIR$/Assets/Tests/PlayMode Tests/KillerTrapTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" />
@@ -76,6 +61,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterIdleState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterJumpState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" />
       </list>
     </option>
   </component>
@@ -123,7 +109,7 @@
       <workItem from="1608260046181" duration="2412000" />
       <workItem from="1608263820117" duration="4291000" />
       <workItem from="1608303214531" duration="16981000" />
-      <workItem from="1608571414180" duration="5398000" />
+      <workItem from="1608571414180" duration="7168000" />
     </task>
     <servers />
   </component>

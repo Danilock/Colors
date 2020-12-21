@@ -626,7 +626,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563570295}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.177429, y: -1.2882502, z: 1.1294626}
+  m_LocalPosition: {x: 2.76, y: -1.41, z: 1.1294626}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 24781726}
@@ -664,8 +664,10 @@ GameObject:
   - component: {fileID: 689267792}
   - component: {fileID: 689267794}
   - component: {fileID: 689267793}
-  m_Layer: 12
-  m_Name: Water
+  - component: {fileID: 689267797}
+  - component: {fileID: 689267795}
+  m_Layer: 0
+  m_Name: Blue Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -963,6 +965,35 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &689267795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689267791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1375b682b03a28e4b9c3604f29250dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_WaterColor: 0
+--- !u!19719996 &689267797
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689267791}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &878084000
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,6 +22,10 @@ public class CharacterJumpState : CharacterBaseState
         {
             character.m_Ch2D.AirControl = false;
         }
+        else
+        {
+            character.m_Ch2D.AirControl = true;
+        }
     }
 
     public override void FixedUpdate(Character character)
