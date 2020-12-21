@@ -7,6 +7,10 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Game" t="Include">
+            <e p="Coins" t="Include">
+              <e p="CoinManager.cs" t="Include" />
+              <e p="CoinObject.cs" t="Include" />
+            </e>
             <e p="Color System" t="Include">
               <e p="ColorManager.cs" t="Include" />
             </e>
@@ -37,6 +41,7 @@
           <e p="PlayMode Tests" t="Include">
             <e p="KillerTrapTest.cs" t="Include" />
             <e p="PlayMode Tests.asmdef" t="Include" />
+            <e p="TakeCoinTest.cs" t="Include" />
           </e>
         </e>
       </e>

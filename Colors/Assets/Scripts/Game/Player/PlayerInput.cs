@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,11 +7,52 @@ namespace Game.Player
 {
     public class PlayerInput : MonoBehaviour
     {
+        #region Singleton
+
+        private static PlayerInput _instance;
+
+        public static PlayerInput Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    Debug.LogError("There's no player input script in the Scene");
+
+                return _instance;
+            }
+        }
+        #endregion
+        
         [SerializeField] private Character[] m_Characters;
         [SerializeField] private Character m_CurrentCharacter;
 
         private int m_IndexCharacter = 0;
         public  static float HorizontalInput { get; private set; }
+
+        private void Awake()
+        {
+            #region Initializing Singleton
+
+            
+
+            PlayerInput[] _inputs = FindObjectsOfType<PlayerInput>();
+
+            if (_inputs.Length > 1)
+            {
+                Debug.LogError("Can't be two inputs in the same scene!");
+
+                foreach (var inputObj in _inputs)
+                {
+                    Debug.LogError(inputObj.gameObject.name);
+                }
+            }
+            
+            if (_instance != null && _instance != this)
+                Destroy(gameObject);
+            else
+                _instance = this;
+            #endregion
+        }
 
         // Start is called before the first frame update
         void Start()

@@ -9,7 +9,8 @@ public class GameManager : MonoBehaviour
     {
         Paused,
         InGame,
-        Loading
+        Loading,
+        InMenu
     }
 
     public GameState currentGameState;
