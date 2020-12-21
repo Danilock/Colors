@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq.Expressions;
 using Game.Player.Finite_State_Machine;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -15,6 +16,7 @@ namespace Game.Player
         [HideInInspector] public Rigidbody2D rgb2D;
         [HideInInspector] public Animator characterAnimator;
         public bool InUse { get; set; }
+        [SerializeField] private LayerMask stopMovementLayers;
         #endregion
 
         #region Finite State Machine
@@ -36,9 +38,9 @@ namespace Game.Player
         // Update is called once per frame
         void Update()
         {
-            Debug.Log(m_CurrentState);
             if (InUse && GameManager.Instance.currentGameState == GameManager.GameState.InGame)
             {
+                Debug.Log(m_CurrentState);
                 m_CurrentState.Update(this);
             }
         }
@@ -63,12 +65,27 @@ namespace Game.Player
             m_CurrentState.EnterState(this);
         }
         
+        public bool CollidedWall()
+        {
+            bool linecastDetectWall = Physics2D.Linecast(transform.position,
+                transform.position + (transform.right * transform.localScale.x * .13f),
+                stopMovementLayers);
+
+            return linecastDetectWall;
+        }
+        
         /// <summary>
         /// This methods makes the character jump.
         /// </summary>
         public void CharacterJump()
         {
             m_Ch2D.Move(PlayerInput.HorizontalInput * characterSpeed, false, true);
+        }
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawLine(transform.position, transform.position + (transform.right * transform.localScale.x * .13f));
         }
     }
 }

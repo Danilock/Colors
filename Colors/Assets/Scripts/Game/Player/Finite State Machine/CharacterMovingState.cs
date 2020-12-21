@@ -16,6 +16,12 @@ public class CharacterMovingState : CharacterBaseState
         if (Input.GetButtonDown("Jump"))
         {
             character.CharacterJump();
+            character.SetState(character.JumpState);
+        }
+
+        if (character.CollidedWall())
+        {
+            character.SetState(character.IdleState);
         }
     }
 

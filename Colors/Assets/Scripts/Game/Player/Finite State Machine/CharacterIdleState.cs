@@ -17,6 +17,7 @@ public class CharacterIdleState : CharacterBaseState
         if (Input.GetButtonDown("Jump"))
         {
             character.CharacterJump();
+            character.SetState(character.JumpState);
         }
     }
 

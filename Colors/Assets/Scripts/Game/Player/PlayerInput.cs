@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
 namespace Game.Player
@@ -25,6 +26,8 @@ namespace Game.Player
         
         [SerializeField] private Character[] m_Characters;
         [SerializeField] private Character m_CurrentCharacter;
+
+        private CinemachineVirtualCamera m_CinemachineVirtual;
 
         private int m_IndexCharacter = 0;
         public  static float HorizontalInput { get; private set; }
@@ -57,8 +60,11 @@ namespace Game.Player
         // Start is called before the first frame update
         void Start()
         {
+            //Initiating the game with the first character in herarchy
             m_CurrentCharacter = m_Characters[0];
             m_CurrentCharacter.InUse = true;
+
+            m_CinemachineVirtual = FindObjectOfType<CinemachineVirtualCamera>();
         }
 
         // Update is called once per frame
@@ -66,12 +72,12 @@ namespace Game.Player
         {
             HorizontalInput = Input.GetAxisRaw("Horizontal");
             
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E))//If E is pressed select the next character
             {
                 m_IndexCharacter = (m_IndexCharacter + 1) % m_Characters.Length;
                 ChangeCharacter(m_Characters[m_IndexCharacter]);
             }
-            else if(Input.GetKeyDown(KeyCode.Q))
+            else if(Input.GetKeyDown(KeyCode.Q))//If Q is pressed select the previous character
             {
                 if (m_IndexCharacter > 0)
                 {
@@ -99,6 +105,8 @@ namespace Game.Player
 
             m_CurrentCharacter = newCharacter;//add the new character as the current one
             m_CurrentCharacter.InUse = true;//put's it's state as true
+
+            m_CinemachineVirtual.Follow = m_CurrentCharacter.transform;
         }
     }
 }
