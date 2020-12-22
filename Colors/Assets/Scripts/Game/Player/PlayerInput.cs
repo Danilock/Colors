@@ -24,7 +24,7 @@ namespace Game.Player
         }
         #endregion
         
-        [SerializeField] private Character[] m_Characters;
+        [SerializeField] private List<Character> m_Characters;
         [SerializeField] private Character m_CurrentCharacter;
 
         private int m_IndexCharacter = 0;
@@ -70,7 +70,7 @@ namespace Game.Player
             
             if (Input.GetKeyDown(KeyCode.E))//If E is pressed select the next character
             {
-                m_IndexCharacter = (m_IndexCharacter + 1) % m_Characters.Length;
+                m_IndexCharacter = (m_IndexCharacter + 1) % m_Characters.Count;
                 ChangeCharacter(m_Characters[m_IndexCharacter]);
             }
             else if(Input.GetKeyDown(KeyCode.Q))//If Q is pressed select the previous character
@@ -82,7 +82,7 @@ namespace Game.Player
 
                 else
                 {
-                    m_IndexCharacter = m_Characters.Length - 1;
+                    m_IndexCharacter = m_Characters.Count - 1;
                 }
                 ChangeCharacter(m_Characters[m_IndexCharacter]);
             }
@@ -91,7 +91,8 @@ namespace Game.Player
         [ContextMenu("Add Characters")]
         void FindAllCharacters()
         {
-            m_Characters = FindObjectsOfType<Character>();
+            Character[] charactersInScene = FindObjectsOfType<Character>();
+            m_Characters = new List<Character>(charactersInScene);
         }
 
         void ChangeCharacter(Character newCharacter)
@@ -101,6 +102,25 @@ namespace Game.Player
 
             m_CurrentCharacter = newCharacter;//add the new character as the current one
             m_CurrentCharacter.InUse = true;//put's it's state as true
+        }
+        
+        /// <summary>
+        /// Removes a character from the list.
+        /// </summary>
+        /// <param name="characterToRemove"></param>
+        public void RemoveCharacterFromList(GameObject characterToRemove)
+        {
+            for (int i = 0; i < m_Characters.Count; i++)
+            {
+                if (m_Characters[i].gameObject == characterToRemove)//if find the character, it'll remove it from the list
+                {
+                    m_Characters.Remove(m_Characters[i]);
+                }
+            }
+            
+            //If there are characters without completing the level then select the first of them
+            if(m_Characters.Count > 0)
+                ChangeCharacter(m_Characters[0]);
         }
     }
 }
