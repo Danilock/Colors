@@ -27,8 +27,6 @@ namespace Game.Player
         [SerializeField] private Character[] m_Characters;
         [SerializeField] private Character m_CurrentCharacter;
 
-        private CinemachineVirtualCamera m_CinemachineVirtual;
-
         private int m_IndexCharacter = 0;
         public  static float HorizontalInput { get; private set; }
 
@@ -63,8 +61,6 @@ namespace Game.Player
             //Initiating the game with the first character in herarchy
             m_CurrentCharacter = m_Characters[0];
             m_CurrentCharacter.InUse = true;
-
-            m_CinemachineVirtual = FindObjectOfType<CinemachineVirtualCamera>();
         }
 
         // Update is called once per frame
@@ -105,8 +101,6 @@ namespace Game.Player
 
             m_CurrentCharacter = newCharacter;//add the new character as the current one
             m_CurrentCharacter.InUse = true;//put's it's state as true
-
-            m_CinemachineVirtual.Follow = m_CurrentCharacter.transform;
         }
     }
 }

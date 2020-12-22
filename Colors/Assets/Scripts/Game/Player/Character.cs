@@ -84,7 +84,7 @@ namespace Game.Player
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.blue;
-            Gizmos.DrawLine(transform.position, transform.position + (transform.right * transform.localScale.x * .1f));
+            Gizmos.DrawLine(transform.position, transform.position + (transform.right * transform.localScale.x * .1f) );
         }
     }
 }

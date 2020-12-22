@@ -8,7 +8,7 @@ public class CharacterJumpState : CharacterBaseState
 {
     public override void EnterState(Character character)
     {
-        character.m_Ch2D.CrouchSpeed /= 2;
+        character.m_Ch2D.CrouchSpeed /= 1.2f;
     }
 
     public override void Update(Character character)
@@ -18,6 +18,7 @@ public class CharacterJumpState : CharacterBaseState
             character.SetState(character.IdleState);
         }
 
+        #region AirControl Checker
         if (character.CollidedWall())
         {
             character.m_Ch2D.AirControl = false;
@@ -26,6 +27,7 @@ public class CharacterJumpState : CharacterBaseState
         {
             character.m_Ch2D.AirControl = true;
         }
+        #endregion
     }
 
     public override void FixedUpdate(Character character)
@@ -37,6 +39,6 @@ public class CharacterJumpState : CharacterBaseState
     public override void ExitState(Character character)
     {
         character.m_Ch2D.AirControl = true;
-        character.m_Ch2D.CrouchSpeed *= 2;
+        character.m_Ch2D.CrouchSpeed *= 1.2f;
     }
 }
