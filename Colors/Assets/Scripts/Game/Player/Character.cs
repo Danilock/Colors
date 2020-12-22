@@ -40,7 +40,6 @@ namespace Game.Player
         {
             if (InUse && GameManager.Instance.currentGameState == GameManager.GameState.InGame)
             {
-                Debug.Log(m_CurrentState);
                 m_CurrentState.Update(this);
             }
         }
@@ -68,7 +67,7 @@ namespace Game.Player
         public bool CollidedWall()
         {
             bool linecastDetectWall = Physics2D.Linecast(transform.position,
-                transform.position + (transform.right * transform.localScale.x * .13f),
+                transform.position + (transform.right * transform.localScale.x * .1f),
                 stopMovementLayers);
 
             return linecastDetectWall;
@@ -85,7 +84,7 @@ namespace Game.Player
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.blue;
-            Gizmos.DrawLine(transform.position, transform.position + (transform.right * transform.localScale.x * .13f));
+            Gizmos.DrawLine(transform.position, transform.position + (transform.right * transform.localScale.x * .1f));
         }
     }
 }

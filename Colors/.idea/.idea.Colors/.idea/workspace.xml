@@ -20,10 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5f1e6b1-a8d1-4d00-9d20-2f091094c61d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterJumpState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterJumpState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +36,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Traps/Water.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterMovingState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tests/PlayMode Tests/KillerTrapTest.cs" root0="FORCE_HIGHLIGHTING" />
@@ -41,6 +44,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterIdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Color System/ColorManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.3/Runtime/Behaviours/CinemachineTargetGroup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Lerp/MoveThroughPoints.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -59,9 +63,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterMovingState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterIdleState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterJumpState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/CharacterController2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/Water.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Lerp/MoveThroughPoints.cs" />
       </list>
     </option>
   </component>
@@ -109,7 +116,8 @@
       <workItem from="1608260046181" duration="2412000" />
       <workItem from="1608263820117" duration="4291000" />
       <workItem from="1608303214531" duration="16981000" />
-      <workItem from="1608571414180" duration="7168000" />
+      <workItem from="1608571414180" duration="8975000" />
+      <workItem from="1608603403648" duration="2810000" />
     </task>
     <servers />
   </component>

@@ -8,7 +8,7 @@ public class CharacterJumpState : CharacterBaseState
 {
     public override void EnterState(Character character)
     {
-        //character.m_Ch2D.CrouchSpeed /= 2;
+        character.m_Ch2D.CrouchSpeed /= 2;
     }
 
     public override void Update(Character character)
@@ -37,5 +37,6 @@ public class CharacterJumpState : CharacterBaseState
     public override void ExitState(Character character)
     {
         character.m_Ch2D.AirControl = true;
+        character.m_Ch2D.CrouchSpeed *= 2;
     }
 }

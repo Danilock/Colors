@@ -17,6 +17,10 @@
             <e p="Events" t="Include">
               <e p="PressKeyEvent.cs" t="Include" />
             </e>
+            <e p="Lerp" t="Include">
+              <e p="LerpMovement.cs" t="Include" />
+              <e p="MoveThroughPoints.cs" t="Include" />
+            </e>
             <e p="Managers" t="Include">
               <e p="GameManager.cs" t="Include" />
             </e>
@@ -33,6 +37,7 @@
             </e>
             <e p="Traps" t="Include">
               <e p="KillerTrap.cs" t="Include" />
+              <e p="Water.cs" t="Include" />
             </e>
           </e>
           <e p="Scripts.asmdef" t="Include" />
