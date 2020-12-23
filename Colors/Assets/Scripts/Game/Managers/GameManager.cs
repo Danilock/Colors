@@ -10,7 +10,9 @@ public class GameManager : MonoBehaviour
         Paused,
         InGame,
         Loading,
-        InMenu
+        InMenu,
+        PlayerWin,//Level Completed
+        PlayerLose
     }
 
     public GameState currentGameState;
