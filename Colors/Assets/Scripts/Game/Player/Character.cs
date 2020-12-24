@@ -19,20 +19,8 @@ namespace Game.Player
         private bool m_inUse;
         public bool InUse
         {
-            get { return m_inUse; }
-            set
-            {
-                m_inUse = value;
-
-                if (m_inUse)
-                {
-                    m_CharacterMaterial.DisableKeyword("GHOST_ON");
-                }
-                else
-                {
-                    m_CharacterMaterial.EnableKeyword("GHOST_ON");
-                }
-            }
+            get => m_inUse;
+            set => m_inUse = value;
         }
         [SerializeField] private LayerMask stopMovementLayers;
         #endregion
@@ -100,6 +88,14 @@ namespace Game.Player
         public void CharacterJump()
         {
             m_Ch2D.Move(PlayerInput.HorizontalInput * characterSpeed, false, true);
+        }
+
+        public void EnableGhostMaterial(bool value)
+        {
+            if(value)
+                m_CharacterMaterial.EnableKeyword("GHOST_ON");
+            else
+                m_CharacterMaterial.DisableKeyword("GHOST_ON");
         }
 
         private void OnDrawGizmos()
