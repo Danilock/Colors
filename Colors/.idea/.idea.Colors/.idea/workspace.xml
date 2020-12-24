@@ -20,12 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5f1e6b1-a8d1-4d00-9d20-2f091094c61d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Traps/Saw/Saw.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Traps/Saw/Saw.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/LevelCompleteCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/LevelCompleteCollider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/LevelCompleteManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/LevelCompleteManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Color System/ColorManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Color System/ColorManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/LevelCompleteCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorCollider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/LevelCompleteCollider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorCollider.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/LevelCompleteManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/LevelCompleteManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,16 +43,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/LevelCompleteCollider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Traps/Water.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/LevelCompleteManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorCollider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterMovingState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Tests/PlayMode Tests/KillerTrapTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Events/PressKeyEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterIdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Color System/ColorManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.3/Runtime/Behaviours/CinemachineTargetGroup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Traps/Water.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterMovingState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tests/PlayMode Tests/KillerTrapTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Events/PressKeyEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/CoinCreatorWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Managers/LevelLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Lerp/MoveThroughPoints.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Traps/Ventiler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -56,7 +65,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/PlayerBaseState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterBaseState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Color System/ColorManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Tests/PlayMode Tests/Tests/TrapKillerTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Events/PressKeyEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/Killer Trap.cs" />
@@ -68,13 +76,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/CharacterController2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/Water.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Lerp/MoveThroughPoints.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/Ventiler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterJumpState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/LevelCompleteCollider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Color System/ColorManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/Ventiler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/LevelCompleteColliderCustomEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/LevelCompleteManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorCollider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/LevelLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/CoinCreatorWindow.cs" />
       </list>
     </option>
   </component>
@@ -124,7 +138,9 @@
       <workItem from="1608303214531" duration="16981000" />
       <workItem from="1608571414180" duration="8975000" />
       <workItem from="1608603403648" duration="8048000" />
-      <workItem from="1608676651041" duration="1859000" />
+      <workItem from="1608676651041" duration="2435000" />
+      <workItem from="1608748925840" duration="4695000" />
+      <workItem from="1608784056312" duration="3365000" />
     </task>
     <servers />
   </component>

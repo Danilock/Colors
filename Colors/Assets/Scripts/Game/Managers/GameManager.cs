@@ -2,9 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private Animator m_TransitionAnimator;
     public enum GameState
     {
         Paused,
@@ -23,7 +25,7 @@ public class GameManager : MonoBehaviour
         get
         {
             if(_instance == null)
-                Debug.LogError("Manager is Null");
+                print("Manager is Null");
 
             return _instance;
         }
@@ -31,6 +33,29 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        _instance = this;
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+    }
+
+    public void LoadScene(string sceneName)
+    {
+        currentGameState = GameState.Loading;
+        StartCoroutine(AsyncScene(sceneName));
+    }
+
+    private IEnumerator AsyncScene(string sceneToAsync)
+    {
+        m_TransitionAnimator.SetTrigger("Transition");
+        
+        yield return  new WaitForSeconds(1.5f);
+
+        SceneManager.LoadScene(sceneToAsync);
     }
 }

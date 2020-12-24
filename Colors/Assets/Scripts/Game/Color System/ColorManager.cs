@@ -38,9 +38,9 @@ namespace Game.Color_System
                 case "Blue":
                     objectColor = objColor.Blue;
                     break;
-                
-                gameObject.layer = LayerMask.NameToLayer(objectColor.ToString());
             }
+                
+            gameObject.layer = LayerMask.NameToLayer(objectColor.ToString());
         }
     }
 }

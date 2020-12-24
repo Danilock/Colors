@@ -9,23 +9,22 @@ using UnityEngine.Events;
 namespace Game.Level_Complete_System
 {
     [RequireComponent(typeof(ColorManager))]
-    public class LevelCompleteCollider : MonoBehaviour
+    public class DoorCollider : MonoBehaviour
     {
         [SerializeField] private UnityEvent m_OnColliderCheck;
-        private LevelCompleteManager m_LevelCompleteManager;
+        private DoorsManager m_DoorsManager;
+        private bool m_IsCompleted;
 
         private void Start()
         {
-            m_LevelCompleteManager = GetComponentInParent<LevelCompleteManager>();
+            m_DoorsManager = GetComponentInParent<DoorsManager>();
         }
-
-        private bool m_IsCompleted;
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Player") && !m_IsCompleted)
             {
                 PlayerInput.Instance.RemoveCharacterFromList(other.gameObject);
-                m_LevelCompleteManager.CheckCompleteCollider(this);
+                m_DoorsManager.CheckCompleteCollider(this);
                 m_OnColliderCheck.Invoke();
                 m_IsCompleted = true;
             }
