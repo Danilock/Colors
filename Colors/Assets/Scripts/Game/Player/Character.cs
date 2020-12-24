@@ -15,7 +15,10 @@ namespace Game.Player
         [HideInInspector] public CharacterController2D m_Ch2D;
         [HideInInspector] public Rigidbody2D rgb2D;
         [HideInInspector] public Animator characterAnimator;
+
+        [SerializeField] private GameObject m_PickIndicator;
         private Material m_CharacterMaterial;
+        private Material m_PickIndicatorMaterial;
         private bool m_inUse;
         public bool InUse
         {
@@ -38,6 +41,8 @@ namespace Game.Player
             rgb2D = GetComponent<Rigidbody2D>();
             characterAnimator = GetComponent<Animator>();
             m_CharacterMaterial = GetComponent<SpriteRenderer>().material;
+            m_PickIndicatorMaterial = m_PickIndicator.GetComponent<SpriteRenderer>().material;
+            ChangeIndicatorMaterial(false);
             
             if(InUse)
                 m_CharacterMaterial.DisableKeyword("GHOST_ON");
@@ -92,10 +97,31 @@ namespace Game.Player
 
         public void EnableGhostMaterial(bool value)
         {
-            if(value)
+            if (value)
+            {
                 m_CharacterMaterial.EnableKeyword("GHOST_ON");
+            }
             else
+            {
                 m_CharacterMaterial.DisableKeyword("GHOST_ON");
+            }
+        }
+
+        public void ChangeIndicatorMaterial(bool state)
+        {
+            if (state)
+            {
+                m_PickIndicatorMaterial.EnableKeyword("GHOST_ON");
+            }
+            else
+            {
+                m_PickIndicatorMaterial.DisableKeyword("GHOST_ON");
+            }
+        }
+
+        public void SetIndicator(bool state)
+        {
+            m_PickIndicator.SetActive(state);
         }
 
         private void OnDrawGizmos()

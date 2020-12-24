@@ -31,7 +31,6 @@ namespace Game.Coins
         public void AddCoins(int amount)
         {
             CurrentCoins += amount;
-            Debug.Log(amount + " coins added");
         }
     }
 }

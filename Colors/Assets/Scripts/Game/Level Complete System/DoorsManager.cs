@@ -13,7 +13,7 @@ namespace Game.Level_Complete_System
 
         private void Start()
         {
-            GameManager.Instance.currentGameState = GameManager.GameState.InGame;
+            GameManager.Instance.currentGameState = GameManager.GameState.InGame; 
         }
 
         public void CheckCompleteCollider(DoorCollider colliderToCheck)

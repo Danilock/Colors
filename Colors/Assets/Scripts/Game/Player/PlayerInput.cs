@@ -28,6 +28,7 @@ namespace Game.Player
         [SerializeField] private Character m_CurrentCharacter;
 
         private int m_IndexCharacter = 0;
+        private int m_NextCharacter = 1;
         public  static float HorizontalInput { get; private set; }
 
         private void Awake()
@@ -71,20 +72,9 @@ namespace Game.Player
             if (Input.GetKeyDown(KeyCode.E))//If E is pressed select the next character
             {
                 m_IndexCharacter = (m_IndexCharacter + 1) % m_Characters.Count;
+                m_NextCharacter = (m_NextCharacter + 1) % m_Characters.Count;
                 ChangeCharacter(m_Characters[m_IndexCharacter]);
-            }
-            else if(Input.GetKeyDown(KeyCode.Q))//If Q is pressed select the previous character
-            {
-                if (m_IndexCharacter > 0)
-                {
-                    m_IndexCharacter--;
-                }
-
-                else
-                {
-                    m_IndexCharacter = m_Characters.Count - 1;
-                }
-                ChangeCharacter(m_Characters[m_IndexCharacter]);
+                InitializeNextCharacter(m_Characters[m_NextCharacter]);
             }
         }
         
@@ -100,10 +90,19 @@ namespace Game.Player
             m_CurrentCharacter.InUse = false;//sets the actual character state to false
             m_CurrentCharacter.SetState(m_CurrentCharacter.IdleState);
             m_CurrentCharacter.EnableGhostMaterial(true);
+            m_CurrentCharacter.SetIndicator(false);
             
             m_CurrentCharacter = newCharacter;//add the new character as the current one
             m_CurrentCharacter.InUse = true;//put's it's state as true
             m_CurrentCharacter.EnableGhostMaterial(false);
+            m_CurrentCharacter.SetIndicator(true);
+            m_CurrentCharacter.ChangeIndicatorMaterial(false);
+        }
+
+        void InitializeNextCharacter(Character nextCharacter)
+        {
+            nextCharacter.SetIndicator(true);
+            nextCharacter.ChangeIndicatorMaterial(true);
         }
         
         /// <summary>

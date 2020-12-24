@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5f1e6b1-a8d1-4d00-9d20-2f091094c61d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" afterDir="false" />
     </list>
@@ -75,11 +77,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/LevelCompleteManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorCollider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/LevelLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/CoinCreatorWindow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" />
       </list>
     </option>
   </component>
@@ -132,6 +135,7 @@
       <workItem from="1608676651041" duration="2435000" />
       <workItem from="1608748925840" duration="4695000" />
       <workItem from="1608784056312" duration="6384000" />
+      <workItem from="1608822922188" duration="7674000" />
     </task>
     <servers />
   </component>
