@@ -99,9 +99,13 @@ namespace Game.Player
         {
             m_CurrentCharacter.InUse = false;//sets the actual character state to false
             m_CurrentCharacter.SetState(m_CurrentCharacter.IdleState);
-
+            Material mat = m_CurrentCharacter.GetComponent<SpriteRenderer>().material;
+            mat.EnableKeyword("GHOST_ON");
+            
             m_CurrentCharacter = newCharacter;//add the new character as the current one
             m_CurrentCharacter.InUse = true;//put's it's state as true
+            mat = m_CurrentCharacter.GetComponent<SpriteRenderer>().material;
+            mat.DisableKeyword("GHOST_ON");
         }
         
         /// <summary>

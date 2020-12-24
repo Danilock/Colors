@@ -15,7 +15,25 @@ namespace Game.Player
         [HideInInspector] public CharacterController2D m_Ch2D;
         [HideInInspector] public Rigidbody2D rgb2D;
         [HideInInspector] public Animator characterAnimator;
-        public bool InUse { get; set; }
+        private Material m_CharacterMaterial;
+        private bool m_inUse;
+        public bool InUse
+        {
+            get { return m_inUse; }
+            set
+            {
+                m_inUse = value;
+
+                if (m_inUse)
+                {
+                    m_CharacterMaterial.DisableKeyword("GHOST_ON");
+                }
+                else
+                {
+                    m_CharacterMaterial.EnableKeyword("GHOST_ON");
+                }
+            }
+        }
         [SerializeField] private LayerMask stopMovementLayers;
         #endregion
 
@@ -31,7 +49,10 @@ namespace Game.Player
             m_Ch2D = GetComponent<CharacterController2D>();
             rgb2D = GetComponent<Rigidbody2D>();
             characterAnimator = GetComponent<Animator>();
+            m_CharacterMaterial = GetComponent<SpriteRenderer>().material;
             
+            if(InUse)
+                m_CharacterMaterial.DisableKeyword("GHOST_ON");
             SetState(IdleState);
         }
 
