@@ -1,18 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Game.Color_System;
 using UnityEngine;
 
 namespace Game.Coins
 {
     public class CoinManager : MonoBehaviour
     {
-        private int m_currentPoints;
-
-        public int CurrentCoins
-        {
-            get { return m_currentPoints; }
-            private set { m_currentPoints = value; }
-        }
+        public delegate void OnCoinAdded();
+        public event OnCoinAdded OnCoinAddedAction;
+        #region Coins
+        public int RedCoins { get; private set; }
+        public int BlueCoins { get; private set; }
+        public int YellowCoins { get; private set; }
+        #endregion
 
         private static CoinManager m_instance;
         public static CoinManager Instance
@@ -28,9 +29,22 @@ namespace Game.Coins
 
         void Awake() => m_instance = this;
 
-        public void AddCoins(int amount)
+        public void AddCoins(int amount, ColorManager.objColor coinColor)
         {
-            CurrentCoins += amount;
+            switch (coinColor)
+            {
+                case ColorManager.objColor.Blue:
+                    BlueCoins += 1;
+                    break;
+                case ColorManager.objColor.Red:
+                    RedCoins += 1;
+                    break;
+                case  ColorManager.objColor.Yellow:
+                    YellowCoins += 1;
+                    break;
+            }
+            
+            OnCoinAddedAction?.Invoke();
         }
     }
 }

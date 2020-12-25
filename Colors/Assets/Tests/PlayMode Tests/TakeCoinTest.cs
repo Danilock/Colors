@@ -49,7 +49,7 @@ namespace Tests
             coin.transform.position = player.transform.position;
 
             yield return new WaitForSeconds(1f);
-            int actualCoins = CoinManager.Instance.CurrentCoins;
+            int actualCoins = CoinManager.Instance.RedCoins;
             Assert.AreEqual(1, actualCoins);
             Assert.IsTrue(coin == null);
         }
