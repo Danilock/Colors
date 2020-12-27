@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -43,7 +44,8 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
         }
     }
-
+    
+    #region Level Management
     public void LoadScene(string sceneName)
     {
         currentGameState = GameState.Loading;
@@ -58,4 +60,10 @@ public class GameManager : MonoBehaviour
 
         SceneManager.LoadScene(sceneToAsync);
     }
+
+    public void RestartLevel()
+    {
+        LoadScene(SceneManager.GetActiveScene().name);
+    }
+    #endregion
 }

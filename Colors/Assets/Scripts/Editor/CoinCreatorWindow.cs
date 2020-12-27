@@ -51,7 +51,7 @@ public class CoinCreatorWindow : EditorWindow
         for (int i = 0; i < m_AmountToInstantiate; i++)
         {
             //Initializing Components
-            GameObject coin = new GameObject("Coin" + i);
+            GameObject coin = new GameObject(m_CoinColor.ToString() + " Coin");
             SpriteRenderer coinRenderer = coin.AddComponent<SpriteRenderer>();
             ColorManager coinColorManager = coin.AddComponent<ColorManager>();
             Animator coinAnimator = coin.AddComponent<Animator>();
@@ -66,6 +66,7 @@ public class CoinCreatorWindow : EditorWindow
             coinCollider.isTrigger = true;
 
             coin.transform.SetParent(coinParent.transform);
+            coin.layer = LayerMask.GetMask("Coin");
         }
     }
 }

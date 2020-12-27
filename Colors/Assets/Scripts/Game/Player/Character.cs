@@ -66,6 +66,14 @@ namespace Game.Player
             }
         }
 
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (InUse && GameManager.Instance.currentGameState == GameManager.GameState.InGame)
+            {
+                m_CurrentState.OnTriggerEnter2D(this, other);
+            }
+        }
+
         /// <summary>
         /// Sets the character state executing the Exit State and Enter State.
         /// </summary>

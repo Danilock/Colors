@@ -15,32 +15,18 @@ namespace Game.Coins
         public int YellowCoins { get; private set; }
         #endregion
 
-        private static CoinManager m_instance;
-        public static CoinManager Instance
-        {
-            get
-            {
-                if (m_instance == null)
-                    Debug.LogError("No Coin Manager found");
-
-                return m_instance;
-            }
-        }
-
-        void Awake() => m_instance = this;
-
         public void AddCoins(int amount, ColorManager.objColor coinColor)
         {
             switch (coinColor)
             {
                 case ColorManager.objColor.Blue:
-                    BlueCoins += 1;
+                    BlueCoins += amount;
                     break;
                 case ColorManager.objColor.Red:
-                    RedCoins += 1;
+                    RedCoins += amount;
                     break;
                 case  ColorManager.objColor.Yellow:
-                    YellowCoins += 1;
+                    YellowCoins += amount;
                     break;
             }
             

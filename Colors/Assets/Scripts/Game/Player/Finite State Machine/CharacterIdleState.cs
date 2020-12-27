@@ -36,4 +36,9 @@ public class CharacterIdleState : CharacterBaseState
     {
         
     }
+
+    public override void OnTriggerEnter2D(Character character, Collider2D col)
+    {
+        
+    }
 }

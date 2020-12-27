@@ -12,27 +12,24 @@ namespace Game.UI
         [SerializeField] private Text blueCoinsText;
         [SerializeField] private Text redCoinsText;
         [SerializeField] private Text yellowCoinsText;
-
+        private CoinManager m_CoinManager;
         private void Start()
         {
-            CoinManager.Instance.OnCoinAddedAction += UpdateCoinsInformation;
-        }
+            m_CoinManager = FindObjectOfType<CoinManager>();
 
-        private void OnEnable()
-        {
-            CoinManager.Instance.OnCoinAddedAction += UpdateCoinsInformation;
+            m_CoinManager.OnCoinAddedAction += UpdateCoinsInformation;
         }
 
         private void OnDisable()
         {
-            CoinManager.Instance.OnCoinAddedAction -= UpdateCoinsInformation;
+            m_CoinManager.OnCoinAddedAction -= UpdateCoinsInformation;
         }
 
         public void UpdateCoinsInformation()
         {
-            blueCoinsText.text = CoinManager.Instance.BlueCoins.ToString();
-            redCoinsText.text = CoinManager.Instance.RedCoins.ToString();
-            yellowCoinsText.text = CoinManager.Instance.YellowCoins.ToString();
+            blueCoinsText.text = m_CoinManager.BlueCoins.ToString();
+            redCoinsText.text = m_CoinManager.RedCoins.ToString();
+            yellowCoinsText.text = m_CoinManager.YellowCoins.ToString();
         }
     }
 }

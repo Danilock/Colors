@@ -41,4 +41,9 @@ public class CharacterJumpState : CharacterBaseState
         character.m_Ch2D.AirControl = true;
         character.m_Ch2D.CrouchSpeed *= 1.2f;
     }
+
+    public override void OnTriggerEnter2D(Character character, Collider2D col)
+    {
+        
+    }
 }

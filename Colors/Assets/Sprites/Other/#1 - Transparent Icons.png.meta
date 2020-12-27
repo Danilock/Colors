@@ -5,6 +5,12 @@ TextureImporter:
   - first:
       213: 1660957820977104790
     second: '#1 - Transparent Icons_0'
+  - first:
+      213: -5063555655813669412
+    second: '#1 - Transparent Icons_1'
+  - first:
+      213: 4292991442675503664
+    second: '#1 - Transparent Icons_2'
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -112,7 +118,7 @@ TextureImporter:
         width: 24
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -120,6 +126,48 @@ TextureImporter:
       bones: []
       spriteID: 6974f3a8658ec0710800000000000000
       internalID: 1660957820977104790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#1 - Transparent Icons_1'
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 263
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd5eca75f2aab9b0800000000000000
+      internalID: -5063555655813669412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#1 - Transparent Icons_2'
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 262
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032177cc8f4c39b30800000000000000
+      internalID: 4292991442675503664
       vertices: []
       indices: 
       edges: []

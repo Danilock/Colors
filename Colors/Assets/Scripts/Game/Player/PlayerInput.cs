@@ -71,10 +71,7 @@ namespace Game.Player
             
             if (Input.GetKeyDown(KeyCode.E))//If E is pressed select the next character
             {
-                m_IndexCharacter = (m_IndexCharacter + 1) % m_Characters.Count;
-                m_NextCharacter = (m_NextCharacter + 1) % m_Characters.Count;
-                ChangeCharacter(m_Characters[m_IndexCharacter]);
-                InitializeNextCharacter(m_Characters[m_NextCharacter]);
+                SelectNewCharacter();
             }
         }
         
@@ -83,6 +80,14 @@ namespace Game.Player
         {
             Character[] charactersInScene = FindObjectsOfType<Character>();
             m_Characters = new List<Character>(charactersInScene);
+        }
+
+        public void SelectNewCharacter()
+        {
+            m_IndexCharacter = (m_IndexCharacter + 1) % m_Characters.Count;
+            m_NextCharacter = (m_NextCharacter + 1) % m_Characters.Count;
+            ChangeCharacter(m_Characters[m_IndexCharacter]);//change the character
+            InitializeNextCharacter(m_Characters[m_NextCharacter]);
         }
 
         void ChangeCharacter(Character newCharacter)

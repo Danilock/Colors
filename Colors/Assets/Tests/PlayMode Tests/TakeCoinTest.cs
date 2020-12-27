@@ -46,10 +46,12 @@ namespace Tests
             coinColor.ChangeColor(ColorManager.objColor.Red);
             #endregion
 
+            CoinManager coinManager = GameObject.FindObjectOfType<CoinManager>();
+
             coin.transform.position = player.transform.position;
 
             yield return new WaitForSeconds(1f);
-            int actualCoins = CoinManager.Instance.RedCoins;
+            int actualCoins = coinManager.RedCoins;
             Assert.AreEqual(1, actualCoins);
             Assert.IsTrue(coin == null);
         }

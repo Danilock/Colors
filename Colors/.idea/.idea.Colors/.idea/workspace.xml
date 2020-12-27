@@ -22,12 +22,23 @@
     <list default="true" id="a5f1e6b1-a8d1-4d00-9d20-2f091094c61d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Traps/Fan/FanOn.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Traps/Fan/FanOn.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/CoinCreatorWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/CoinCreatorWindow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterBaseState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterBaseState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterIdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterIdleState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterJumpState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterJumpState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterMovingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterMovingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/UI/HUD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/UI/HUD.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scripts.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Other/#1 - Transparent Icons.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Other/#1 - Transparent Icons.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tests/PlayMode Tests/TakeCoinTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/PlayMode Tests/TakeCoinTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +52,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorCollider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/UI/HUD.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/UI/TimeUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterIdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Color System/ColorManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.3/Runtime/Behaviours/CinemachineTargetGroup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/UI/RawImageParallaxEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Traps/Water.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@8.2.0/Runtime/2D/Light2D.cs" root0="SKIP_HIGHLIGHTING" />
@@ -61,18 +74,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/PlayerBaseState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterBaseState.cs" />
         <option value="$PROJECT_DIR$/Assets/Tests/PlayMode Tests/Tests/TrapKillerTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Events/PressKeyEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/Killer Trap.cs" />
         <option value="$PROJECT_DIR$/Assets/Tests/PlayMode Tests/KillerTrapTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterMovingState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterIdleState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/CharacterController2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/Water.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Lerp/MoveThroughPoints.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterJumpState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/LevelCompleteCollider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Color System/ColorManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/Ventiler.cs" />
@@ -80,18 +88,27 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/LevelCompleteManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorCollider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/LevelLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/CoinCreatorWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/LightChangerEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" />
         <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@8.2.0/Runtime/2D/Light2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/LightChangerWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/CoinCreatorWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterIdleState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterJumpState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterMovingState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterBaseState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterDeadState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Tests/PlayMode Tests/TakeCoinTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/UI/HUD.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/UI/RawImageParallaxEffect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/UI/HUD.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/TimeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/UI/TimeUI.cs" />
       </list>
     </option>
   </component>
@@ -145,7 +162,10 @@
       <workItem from="1608748925840" duration="4695000" />
       <workItem from="1608784056312" duration="6384000" />
       <workItem from="1608822922188" duration="7674000" />
-      <workItem from="1608845725593" duration="5505000" />
+      <workItem from="1608845725593" duration="6717000" />
+      <workItem from="1609005929795" duration="5790000" />
+      <workItem from="1609033881419" duration="3473000" />
+      <workItem from="1609088446068" duration="1515000" />
     </task>
     <servers />
   </component>
@@ -174,10 +194,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="728" y="350" width="463" height="342" key="#com.intellij.tools.ToolEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608263649676" />
-    <state x="698" y="236" width="428" height="567" key="RiderGenerateDialog" timestamp="1608307320287">
+    <state x="698" y="236" width="428" height="567" key="RiderGenerateDialog" timestamp="1609017414602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="698" y="236" width="428" height="567" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608307320287" />
+    <state x="698" y="236" width="428" height="567" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609017414602" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1608347794829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
