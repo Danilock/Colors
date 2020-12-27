@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Game.Color_System;
+using Game.Sound;
 
 namespace Game.Coins {
     [RequireComponent(typeof(ColorManager))]
@@ -21,6 +22,7 @@ namespace Game.Coins {
         {
             if (collision.CompareTag("Player"))
             {
+                SoundManager.Instance.Play("Coin");
                 m_CoinManager.AddCoins(1, m_CoinColor.objectColor);
                 Destroy(gameObject);
             }

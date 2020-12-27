@@ -53,6 +53,7 @@
               <e p="ColorManager.cs" t="Include" />
             </e>
             <e p="Events" t="Include">
+              <e p="Event_OnTriggerEnter2D.cs" t="Include" />
               <e p="PressKeyEvent.cs" t="Include" />
             </e>
             <e p="Lerp" t="Include">
@@ -78,6 +79,10 @@
                 <e p="CharacterMovingState.cs" t="Include" />
               </e>
               <e p="PlayerInput.cs" t="Include" />
+            </e>
+            <e p="Sound" t="Include">
+              <e p="Sound.cs" t="Include" />
+              <e p="SoundManager.cs" t="Include" />
             </e>
             <e p="Traps" t="Include">
               <e p="KillerTrap.cs" t="Include" />
