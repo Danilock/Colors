@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
 namespace Game.Traps
@@ -24,6 +25,8 @@ namespace Game.Traps
                 if (other.gameObject.layer != LayerMask.NameToLayer(m_WaterColor.ToString()))
                 {
                     Destroy(other.gameObject);
+                    FindObjectOfType<CinemachineImpulseSource>().GenerateImpulse();
+                    GameManager.Instance.RestartLevel();
                 }
             }
         }

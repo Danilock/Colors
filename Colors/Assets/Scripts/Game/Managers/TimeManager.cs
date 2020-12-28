@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Game.Sound;
 using UnityEngine;
 public class TimeManager : MonoBehaviour
 {
@@ -37,6 +38,11 @@ public class TimeManager : MonoBehaviour
     void Timer()
     {
         Seconds -= 1 * Time.deltaTime;
+
+        if (Seconds <= 10f && Minutes == 0f)
+        {
+            SoundManager.Instance.Play("Less 10 seconds");
+        }
 
         if (Seconds <= 0)
         {

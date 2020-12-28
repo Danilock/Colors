@@ -62,6 +62,7 @@ namespace Game.Player
             //Initiating the game with the first character in herarchy
             m_CurrentCharacter = m_Characters[0];
             m_CurrentCharacter.InUse = true;
+            m_CurrentCharacter.EnableGhostMaterial(false);
         }
 
         // Update is called once per frame

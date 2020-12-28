@@ -20,6 +20,7 @@ namespace Game.Traps
             {
                 Destroy(other.gameObject);
                 OnKill.Invoke();
+                FindObjectOfType<CinemachineImpulseSource>().GenerateImpulse();
                 GameManager.Instance.RestartLevel();
             }
         }

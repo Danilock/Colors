@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5f1e6b1-a8d1-4d00-9d20-2f091094c61d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Volumes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Traps/Water.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Traps/Water.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +64,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/Killer Trap.cs" />
         <option value="$PROJECT_DIR$/Assets/Tests/PlayMode Tests/KillerTrapTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/CharacterController2D.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/Water.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Lerp/MoveThroughPoints.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/LevelCompleteCollider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Color System/ColorManager.cs" />
@@ -88,7 +85,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterBaseState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterDeadState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" />
         <option value="$PROJECT_DIR$/Assets/Tests/PlayMode Tests/TakeCoinTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/UI/RawImageParallaxEffect.cs" />
@@ -99,6 +95,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Sound/Sound.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Sound/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/Water.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" />
       </list>
     </option>
   </component>
@@ -156,6 +154,7 @@
       <workItem from="1609005929795" duration="5790000" />
       <workItem from="1609033881419" duration="3473000" />
       <workItem from="1609088446068" duration="4080000" />
+      <workItem from="1609113361597" duration="1045000" />
     </task>
     <servers />
   </component>

@@ -24,6 +24,11 @@ public class TimeUI : MonoBehaviour
     void Update()
     {
         SetTimeText();
+
+        if (_time.Seconds <= 10f && _time.Minutes == 0f)
+        {
+            _timeText.color = Color.red;
+        }
     }
 
 
