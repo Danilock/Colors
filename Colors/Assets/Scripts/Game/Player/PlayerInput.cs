@@ -27,6 +27,8 @@ namespace Game.Player
         [SerializeField] private List<Character> m_Characters;
         [SerializeField] private Character m_CurrentCharacter;
 
+        public Character CurrentCharacter => m_CurrentCharacter;
+
         private int m_IndexCharacter = 0;
         private int m_NextCharacter = 1;
         public  static float HorizontalInput { get; private set; }
