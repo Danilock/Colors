@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Game.Coins;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,9 +10,9 @@ namespace Game.UI
 {
     public class HUD : MonoBehaviour
     {
-        [SerializeField] private Text blueCoinsText;
-        [SerializeField] private Text redCoinsText;
-        [SerializeField] private Text yellowCoinsText;
+        [SerializeField] private TextMeshProUGUI blueCoinsText;
+        [SerializeField] private TextMeshProUGUI redCoinsText;
+        [SerializeField] private TextMeshProUGUI yellowCoinsText;
         private CoinManager m_CoinManager;
         private void Start()
         {

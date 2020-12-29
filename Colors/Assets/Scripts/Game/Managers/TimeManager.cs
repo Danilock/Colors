@@ -13,7 +13,7 @@ public class TimeManager : MonoBehaviour
     }
 
     [SerializeField] float _seconds;
-
+    private bool m_SoundCount;
     public float Seconds
     {
         get { return _seconds; }
@@ -39,9 +39,10 @@ public class TimeManager : MonoBehaviour
     {
         Seconds -= 1 * Time.deltaTime;
 
-        if (Seconds <= 10f && Minutes == 0f)
+        if ((Seconds <= 10f && Minutes == 0f) && !m_SoundCount)
         {
-            SoundManager.Instance.Play("Less 10 seconds");
+            StartCoroutine(SoundCount());
+            m_SoundCount = true;
         }
 
         if (Seconds <= 0)
@@ -55,6 +56,15 @@ public class TimeManager : MonoBehaviour
             {
                 GameManager.Instance.RestartLevel();
             }
+        }
+    }
+
+    private IEnumerator SoundCount()
+    {
+        for (int i = 0; i <= 9; i++)
+        {
+            yield return new WaitForSeconds(1f);
+            SoundManager.Instance.Play("Less 10 seconds");
         }
     }
 }

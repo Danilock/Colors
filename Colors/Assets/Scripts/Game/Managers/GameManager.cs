@@ -63,6 +63,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartLevel()
     {
+        currentGameState = GameState.Loading;
         LoadScene(SceneManager.GetActiveScene().name);
     }
     #endregion
