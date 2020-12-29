@@ -6,24 +6,22 @@ using Game.Color_System;
 using Game.Sound;
 
 namespace Game.Coins {
-    [RequireComponent(typeof(ColorManager))]
     public class CoinObject : MonoBehaviour
     {
         private CoinManager m_CoinManager;
-        private ColorManager m_CoinColor;
+        [SerializeField] private ColorManager.objColor CoinColor;
 
         private void Start()
         {
-            m_CoinColor = GetComponent<ColorManager>();
             m_CoinManager = FindObjectOfType<CoinManager>();
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.CompareTag("Player"))
+            if (collision.CompareTag("Player") && collision.gameObject.layer == LayerMask.NameToLayer(CoinColor.ToString()))
             {
                 SoundManager.Instance.Play("Coin");
-                m_CoinManager.AddCoins(1, m_CoinColor.objectColor);
+                m_CoinManager.AddCoins(1, CoinColor);
                 Destroy(gameObject);
             }
         }

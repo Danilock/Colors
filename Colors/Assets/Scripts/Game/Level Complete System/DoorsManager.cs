@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Game.Sound;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace Game.Level_Complete_System
 {
+    [RequireComponent(typeof(LevelLoader))]
     public class DoorsManager : MonoBehaviour
     {
         [SerializeField] private UnityEvent OnAllDoorsReached;
@@ -22,6 +24,7 @@ namespace Game.Level_Complete_System
 
             if (m_LevelCompleteColliders.Count == 0)
             {
+                SoundManager.Instance.Play("Level Complete");
                 OnAllDoorsReached.Invoke();
             }
         }

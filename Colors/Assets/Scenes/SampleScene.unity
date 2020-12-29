@@ -123,6 +123,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &62096133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 62096134}
+  m_Layer: 0
+  m_Name: -----Audio------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &62096134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62096133}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.3558607, y: -2.835316, z: -1.6073449}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &137482385
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,7 +209,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &137482389
 MonoBehaviour:
@@ -738,6 +768,7 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
+    playOnAwake: 0
   - name: Less 10 seconds
     clip: {fileID: 8300000, guid: a046894b93629e845bea9a891fb6d0e4, type: 3}
     output: {fileID: 1472102949994681231, guid: 649fee621ddc0fc44819af51bdf9c2c7, type: 2}
@@ -745,6 +776,15 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
+    playOnAwake: 0
+  - name: Level Complete
+    clip: {fileID: 8300000, guid: 56add102a6fec204f84bb7ff8a2a742b, type: 3}
+    output: {fileID: 1472102949994681231, guid: 649fee621ddc0fc44819af51bdf9c2c7, type: 2}
+    volume: 0.323
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
 --- !u!4 &257379488
 Transform:
   m_ObjectHideFlags: 0
@@ -757,7 +797,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &272160735
 GameObject:
@@ -1216,7 +1256,6 @@ GameObject:
   m_Component:
   - component: {fileID: 479685475}
   - component: {fileID: 479685480}
-  - component: {fileID: 479685479}
   - component: {fileID: 479685478}
   - component: {fileID: 479685477}
   - component: {fileID: 479685476}
@@ -1280,6 +1319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a756aa3522636954b9673b69804c8583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CoinColor: 2
 --- !u!95 &479685478
 Animator:
   serializedVersion: 3
@@ -1299,19 +1339,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &479685479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 479685474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5bc7b680786804fa8a52d4cd4eb586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectColor: 2
 --- !u!212 &479685480
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1763,7 +1790,6 @@ GameObject:
   m_Component:
   - component: {fileID: 544297202}
   - component: {fileID: 544297207}
-  - component: {fileID: 544297206}
   - component: {fileID: 544297205}
   - component: {fileID: 544297204}
   - component: {fileID: 544297203}
@@ -1827,6 +1853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a756aa3522636954b9673b69804c8583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CoinColor: 1
 --- !u!95 &544297205
 Animator:
   serializedVersion: 3
@@ -1846,19 +1873,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &544297206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544297201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5bc7b680786804fa8a52d4cd4eb586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectColor: 1
 --- !u!212 &544297207
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3603,7 +3617,6 @@ GameObject:
   m_Component:
   - component: {fileID: 690501576}
   - component: {fileID: 690501581}
-  - component: {fileID: 690501580}
   - component: {fileID: 690501579}
   - component: {fileID: 690501578}
   - component: {fileID: 690501577}
@@ -3667,6 +3680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a756aa3522636954b9673b69804c8583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CoinColor: 0
 --- !u!95 &690501579
 Animator:
   serializedVersion: 3
@@ -3686,19 +3700,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &690501580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 690501575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5bc7b680786804fa8a52d4cd4eb586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectColor: 0
 --- !u!212 &690501581
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3856,7 +3857,6 @@ GameObject:
   m_Component:
   - component: {fileID: 709193025}
   - component: {fileID: 709193030}
-  - component: {fileID: 709193029}
   - component: {fileID: 709193028}
   - component: {fileID: 709193027}
   - component: {fileID: 709193026}
@@ -3920,6 +3920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a756aa3522636954b9673b69804c8583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CoinColor: 1
 --- !u!95 &709193028
 Animator:
   serializedVersion: 3
@@ -3939,19 +3940,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &709193029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 709193024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5bc7b680786804fa8a52d4cd4eb586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectColor: 1
 --- !u!212 &709193030
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4181,7 +4169,6 @@ GameObject:
   m_Component:
   - component: {fileID: 753022529}
   - component: {fileID: 753022534}
-  - component: {fileID: 753022533}
   - component: {fileID: 753022532}
   - component: {fileID: 753022531}
   - component: {fileID: 753022530}
@@ -4245,6 +4232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a756aa3522636954b9673b69804c8583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CoinColor: 2
 --- !u!95 &753022532
 Animator:
   serializedVersion: 3
@@ -4264,19 +4252,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &753022533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753022528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5bc7b680786804fa8a52d4cd4eb586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectColor: 2
 --- !u!212 &753022534
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4528,7 +4503,7 @@ Transform:
   - {fileID: 1989703764}
   - {fileID: 1897969237}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &845510569
 GameObject:
@@ -4540,7 +4515,6 @@ GameObject:
   m_Component:
   - component: {fileID: 845510570}
   - component: {fileID: 845510575}
-  - component: {fileID: 845510574}
   - component: {fileID: 845510573}
   - component: {fileID: 845510572}
   - component: {fileID: 845510571}
@@ -4578,6 +4552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a756aa3522636954b9673b69804c8583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CoinColor: 0
 --- !u!95 &845510572
 Animator:
   serializedVersion: 3
@@ -4623,19 +4598,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.12, y: 0.14}
   m_EdgeRadius: 0
---- !u!114 &845510574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845510569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5bc7b680786804fa8a52d4cd4eb586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectColor: 0
 --- !u!212 &845510575
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18605,7 +18567,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1123088428
 GameObject:
@@ -18783,7 +18745,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1260082771}
   - component: {fileID: 1260082776}
-  - component: {fileID: 1260082775}
   - component: {fileID: 1260082774}
   - component: {fileID: 1260082773}
   - component: {fileID: 1260082772}
@@ -18847,6 +18808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a756aa3522636954b9673b69804c8583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CoinColor: 1
 --- !u!95 &1260082774
 Animator:
   serializedVersion: 3
@@ -18866,19 +18828,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1260082775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1260082770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5bc7b680786804fa8a52d4cd4eb586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectColor: 1
 --- !u!212 &1260082776
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20253,7 +20202,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1359117656}
   - component: {fileID: 1359117661}
-  - component: {fileID: 1359117660}
   - component: {fileID: 1359117659}
   - component: {fileID: 1359117658}
   - component: {fileID: 1359117657}
@@ -20317,6 +20265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a756aa3522636954b9673b69804c8583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CoinColor: 2
 --- !u!95 &1359117659
 Animator:
   serializedVersion: 3
@@ -20336,19 +20285,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1359117660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359117655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5bc7b680786804fa8a52d4cd4eb586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectColor: 2
 --- !u!212 &1359117661
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20506,7 +20442,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1414576765}
   - component: {fileID: 1414576770}
-  - component: {fileID: 1414576769}
   - component: {fileID: 1414576768}
   - component: {fileID: 1414576767}
   - component: {fileID: 1414576766}
@@ -20570,6 +20505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a756aa3522636954b9673b69804c8583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CoinColor: 1
 --- !u!95 &1414576768
 Animator:
   serializedVersion: 3
@@ -20589,19 +20525,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1414576769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1414576764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5bc7b680786804fa8a52d4cd4eb586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectColor: 1
 --- !u!212 &1414576770
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21708,7 +21631,7 @@ Transform:
   - {fileID: 544297202}
   - {fileID: 1260082771}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1581121855
 MonoBehaviour:
@@ -22002,7 +21925,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1845529656
 GameObject:
@@ -22548,7 +22471,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2085851574
 GameObject:
@@ -22578,7 +22501,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2113655108
 GameObject:
@@ -22833,7 +22756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7384438676881569008, guid: 9aaaadb7c1494d8468f77ea500c197df, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7384438676881569008, guid: 9aaaadb7c1494d8468f77ea500c197df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -22991,7 +22914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7729142141473647443, guid: 0074c7ac70def0b488598e06782fe113, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7729142141473647443, guid: 0074c7ac70def0b488598e06782fe113, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
