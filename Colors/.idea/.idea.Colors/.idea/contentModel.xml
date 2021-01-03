@@ -43,6 +43,7 @@
             <e p="CoinCreatorWindow.cs" t="Include" />
             <e p="LevelLoaderEditor.cs" t="Include" />
             <e p="LightChangerWindow.cs" t="Include" />
+            <e p="NodeEditorExampleWindow.cs" t="Include" />
           </e>
           <e p="Game" t="Include">
             <e p="Coins" t="Include">

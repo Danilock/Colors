@@ -21,14 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a5f1e6b1-a8d1-4d00-9d20-2f091094c61d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player .prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player .prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Environments/NinjaTown/Background/Brown.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Environments/NinjaTown/Background/Brown.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,14 +92,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/UI/TimeUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/UI/HUD.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/TimeManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Sound/Sound.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Sound/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/CameraFollowCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/NodeEditorExampleWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" />
       </list>
     </option>
   </component>
@@ -164,6 +161,8 @@
       <workItem from="1609113361597" duration="4623000" />
       <workItem from="1609198413972" duration="1876000" />
       <workItem from="1609214604042" duration="3615000" />
+      <workItem from="1609530296542" duration="1105000" />
+      <workItem from="1609674360145" duration="1336000" />
     </task>
     <servers />
   </component>

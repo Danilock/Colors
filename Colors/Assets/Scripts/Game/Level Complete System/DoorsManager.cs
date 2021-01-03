@@ -4,18 +4,19 @@ using System.Collections.Generic;
 using Game.Sound;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 namespace Game.Level_Complete_System
 {
     [RequireComponent(typeof(LevelLoader))]
     public class DoorsManager : MonoBehaviour
     {
-        [SerializeField] private UnityEvent OnAllDoorsReached;
         [SerializeField] private List<DoorCollider> m_LevelCompleteColliders;
-
+        private LevelLoader m_LevelLoader;
         private void Start()
         {
-            GameManager.Instance.currentGameState = GameManager.GameState.InGame; 
+            GameManager.Instance.currentGameState = GameManager.GameState.InGame;
+            m_LevelLoader = GetComponent<LevelLoader>();
         }
 
         public void CheckCompleteCollider(DoorCollider colliderToCheck)
@@ -25,7 +26,13 @@ namespace Game.Level_Complete_System
             if (m_LevelCompleteColliders.Count == 0)
             {
                 SoundManager.Instance.Play("Level Complete");
-                OnAllDoorsReached.Invoke();
+                
+                
+                //Saving the game specifying this was the last level completed
+                GameManager.Instance.SaveGame(SceneManager.GetActiveScene().buildIndex);
+                
+                m_LevelLoader.LoadLevel();
+                
             }
         }
     }

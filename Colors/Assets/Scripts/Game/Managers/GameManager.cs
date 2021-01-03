@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
+    private int m_LastLevel;
     [SerializeField] private Animator m_TransitionAnimator;
     public enum GameState
     {
@@ -41,6 +43,7 @@ public class GameManager : MonoBehaviour
         else
         {
             _instance = this;
+            InitiateLastLevelPrefVariable();
             DontDestroyOnLoad(this.gameObject);
         }
     }
@@ -65,6 +68,21 @@ public class GameManager : MonoBehaviour
     {
         currentGameState = GameState.Loading;
         LoadScene(SceneManager.GetActiveScene().name);
+    }
+    #endregion
+
+    #region Data Saving
+
+    void InitiateLastLevelPrefVariable()
+    {
+        m_LastLevel = PlayerPrefs.HasKey("Last Level") ? PlayerPrefs.GetInt("Last Level") : 0;
+    }
+    public void SaveGame(int level)
+    {
+        if (level > m_LastLevel)
+        {
+            PlayerPrefs.SetInt("Last Level", level);
+        }
     }
     #endregion
 }
