@@ -25,7 +25,7 @@ namespace Game.Level_Complete_System
 
             if (m_LevelCompleteColliders.Count == 0)
             {
-                SoundManager.Instance.Play("Level Complete");
+                SoundManager.Instance?.Play("Level Complete");
                 
                 
                 //Saving the game specifying this was the last level completed

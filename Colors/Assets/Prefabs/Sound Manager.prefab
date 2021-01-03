@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4900804204704206505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4900804204704206487}
+  - component: {fileID: 4900804204704206504}
+  m_Layer: 0
+  m_Name: Sound Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4900804204704206487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4900804204704206505}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.335825, y: -3.1761816, z: 3.7079477}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4900804204704206504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4900804204704206505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 959c17f864b068e4b88fb94515fc0735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Coin
+    clip: {fileID: 8300000, guid: 94374af294c402d44b60c260d3628a29, type: 3}
+    output: {fileID: 1472102949994681231, guid: 649fee621ddc0fc44819af51bdf9c2c7, type: 2}
+    volume: 0.1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Less 10 seconds
+    clip: {fileID: 8300000, guid: a046894b93629e845bea9a891fb6d0e4, type: 3}
+    output: {fileID: 1472102949994681231, guid: 649fee621ddc0fc44819af51bdf9c2c7, type: 2}
+    volume: 0.323
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Level Complete
+    clip: {fileID: 8300000, guid: 56add102a6fec204f84bb7ff8a2a742b, type: 3}
+    output: {fileID: 1472102949994681231, guid: 649fee621ddc0fc44819af51bdf9c2c7, type: 2}
+    volume: 0.323
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
