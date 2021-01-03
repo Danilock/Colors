@@ -105,6 +105,9 @@ namespace Game.Player
 
         public void EnableGhostMaterial(bool value)
         {
+            if(m_CharacterMaterial == null)
+                return;
+            
             if (value)
             {
                 m_CharacterMaterial.EnableKeyword("GHOST_ON");

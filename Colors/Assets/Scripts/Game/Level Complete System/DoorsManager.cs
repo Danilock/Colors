@@ -29,7 +29,7 @@ namespace Game.Level_Complete_System
                 
                 
                 //Saving the game specifying this was the last level completed
-                GameManager.Instance.SaveGame(SceneManager.GetActiveScene().buildIndex);
+                GameManager.Instance.SaveGame(SceneManager.GetActiveScene().buildIndex + 1);
                 
                 m_LevelLoader.LoadLevel();
                 

@@ -76,6 +76,7 @@ public class GameManager : MonoBehaviour
     void InitiateLastLevelPrefVariable()
     {
         m_LastLevel = PlayerPrefs.HasKey("Last Level") ? PlayerPrefs.GetInt("Last Level") : 0;
+        Debug.Log(m_LastLevel);
     }
     public void SaveGame(int level)
     {

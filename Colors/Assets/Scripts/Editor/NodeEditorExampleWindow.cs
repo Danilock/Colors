@@ -11,7 +11,7 @@ public class NodeEditorExampleWindow : EditorWindow
         Rect windowRect2 = new Rect (100, 100, 100, 100);
     
     
-        [MenuItem ("My Tools/Graph Editor Window")]
+        [MenuItem ("MyTools/Graph Editor Window")]
         static void Init () {
             EditorWindow.GetWindow (typeof (NodeEditorExampleWindow));
         }
