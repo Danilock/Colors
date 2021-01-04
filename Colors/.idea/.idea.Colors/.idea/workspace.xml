@@ -19,19 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f1e6b1-a8d1-4d00-9d20-2f091094c61d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Level Complete Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Level Complete Manager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/NodeEditorExampleWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/NodeEditorExampleWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorCollider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="a5f1e6b1-a8d1-4d00-9d20-2f091094c61d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,12 +93,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/CameraFollowCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/NodeEditorExampleWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorCollider.cs" />
         <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.3/Runtime/Impulse/CinemachineImpulseSource.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/TilemapCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" />
       </list>
     </option>
   </component>
@@ -172,7 +160,7 @@
       <workItem from="1609198413972" duration="1876000" />
       <workItem from="1609214604042" duration="3615000" />
       <workItem from="1609530296542" duration="1105000" />
-      <workItem from="1609674360145" duration="7154000" />
+      <workItem from="1609674360145" duration="8904000" />
     </task>
     <servers />
   </component>
