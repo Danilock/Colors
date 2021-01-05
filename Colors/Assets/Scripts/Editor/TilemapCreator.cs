@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Game.Color_System;
+using Game.Traps;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -12,49 +13,74 @@ public class TilemapCreator
     {
         TilemapCreator creator = new TilemapCreator();
         
-        creator.CreateTilemap(ColorManager.objColor.Yellow);
+        creator.CreateTilemapColor(ColorManager.objColor.Yellow);
     }
     [MenuItem("MyTools/Create Tilemaps.../Blue Tilemap")]
     static void CreateBlueTilemap()
     {
         TilemapCreator creator = new TilemapCreator();
         
-        creator.CreateTilemap(ColorManager.objColor.Blue);
+        creator.CreateTilemapColor(ColorManager.objColor.Blue);
     }
     [MenuItem("MyTools/Create Tilemaps.../Red Tilemap")]
     static void CreateRedTilemap()
     {
         TilemapCreator creator = new TilemapCreator();
         
-        creator.CreateTilemap(ColorManager.objColor.Red);
+        creator.CreateTilemapColor(ColorManager.objColor.Red);
     }
 
-    void CreateTilemap(ColorManager.objColor tilemapColor)
+    [MenuItem("MyTools/Create Tilemaps.../Normal Tilemap")]
+    static void CreateNormalTilemap()
+    {
+        TilemapCreator creator = new TilemapCreator();
+
+        creator.TilemapGenerator("Environment");
+    }
+    [MenuItem("MyTools/Create Tilemaps.../Water")]
+    static void CreateWaterTilemap()
+    {
+        TilemapCreator creator = new TilemapCreator();
+
+        Tilemap tile = creator.TilemapGenerator("Water");
+        tile.gameObject.AddComponent<Water>();
+        tile.GetComponent<TilemapRenderer>().sortingLayerName = "Water";
+        tile.GetComponent<CompositeCollider2D>().isTrigger = true;
+    }
+    
+    void CreateTilemapColor(ColorManager.objColor tilemapColor)
+    {
+        Tilemap tileInstance = TilemapGenerator(tilemapColor.ToString() + " Tilemap");
+        
+        ColorManager color = tileInstance.gameObject.AddComponent<ColorManager>();
+        
+        tileInstance.gameObject.layer = LayerMask.NameToLayer(tilemapColor.ToString());
+        color.objectColor = tilemapColor;
+    }
+
+    private Tilemap TilemapGenerator(string TilemapName)
     {
         GameObject mainGrid = GameObject.Find("Grid");
         if (mainGrid == null)
             CreateGrid();
         
-        
-        GameObject tilemap = new GameObject(tilemapColor.ToString() + " Tilemap");
+        GameObject tilemapOBJ = new GameObject(TilemapName);
 
-        tilemap.AddComponent<Tilemap>();
-        TilemapRenderer renderer = tilemap.AddComponent<TilemapRenderer>();
+        Tilemap tilemap = tilemapOBJ.AddComponent<Tilemap>();
+        TilemapRenderer renderer = tilemapOBJ.AddComponent<TilemapRenderer>();
         
-        TilemapCollider2D tilemapCollider = tilemap.AddComponent<TilemapCollider2D>();
-        CompositeCollider2D tilemapComposite = tilemap.AddComponent<CompositeCollider2D>();
-        Rigidbody2D tilemapRGB = tilemap.GetComponent<Rigidbody2D>();
-
-        ColorManager color = tilemap.AddComponent<ColorManager>();
+        TilemapCollider2D tilemapCollider = tilemapOBJ.AddComponent<TilemapCollider2D>();
+        CompositeCollider2D tilemapComposite = tilemapOBJ.AddComponent<CompositeCollider2D>();
+        Rigidbody2D tilemapRGB = tilemapOBJ.GetComponent<Rigidbody2D>();
         
-        
-        tilemap.layer = LayerMask.NameToLayer(tilemapColor.ToString());
-        color.objectColor = tilemapColor;
         renderer.sortingLayerName = "Environment";
         tilemapRGB.isKinematic = true;
 
         tilemapCollider.usedByComposite = true;
-        tilemap.transform.SetParent(mainGrid.transform);
+        
+        tilemapOBJ.gameObject.transform.SetParent(mainGrid.transform);
+
+        return tilemap;
     }
 
     private void CreateGrid()

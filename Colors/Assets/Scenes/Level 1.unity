@@ -619,7 +619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7729142141473647443, guid: 0074c7ac70def0b488598e06782fe113, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7729142141473647443, guid: 0074c7ac70def0b488598e06782fe113, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6205,7 +6205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7384438676881569008, guid: 9aaaadb7c1494d8468f77ea500c197df, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7384438676881569008, guid: 9aaaadb7c1494d8468f77ea500c197df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6325,7 +6325,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1505231975
 GameObject:

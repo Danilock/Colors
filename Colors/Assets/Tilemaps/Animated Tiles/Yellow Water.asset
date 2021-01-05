@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: Yellow Water
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -581591313936434300, guid: 66934a1f2014ba94e87fca0782bbbd10, type: 3}
+  - {fileID: -5337168907215210022, guid: 66934a1f2014ba94e87fca0782bbbd10, type: 3}
+  - {fileID: 102522967607825714, guid: 66934a1f2014ba94e87fca0782bbbd10, type: 3}
+  - {fileID: -1669556280194652970, guid: 66934a1f2014ba94e87fca0782bbbd10, type: 3}
+  - {fileID: 90640478050223003, guid: 66934a1f2014ba94e87fca0782bbbd10, type: 3}
+  - {fileID: 2538814059201952490, guid: 66934a1f2014ba94e87fca0782bbbd10, type: 3}
+  - {fileID: 4767628024448973730, guid: 66934a1f2014ba94e87fca0782bbbd10, type: 3}
+  - {fileID: 7505343334693637366, guid: 66934a1f2014ba94e87fca0782bbbd10, type: 3}
+  - {fileID: -2148044750664825735, guid: 66934a1f2014ba94e87fca0782bbbd10, type: 3}
+  - {fileID: 5136711360764703594, guid: 66934a1f2014ba94e87fca0782bbbd10, type: 3}
+  - {fileID: -5135327859706470434, guid: 66934a1f2014ba94e87fca0782bbbd10, type: 3}
+  - {fileID: -2690305155055324741, guid: 66934a1f2014ba94e87fca0782bbbd10, type: 3}
+  - {fileID: 3244833233574730991, guid: 66934a1f2014ba94e87fca0782bbbd10, type: 3}
+  - {fileID: -3966869549760064261, guid: 66934a1f2014ba94e87fca0782bbbd10, type: 3}
+  - {fileID: -8016778150874877108, guid: 66934a1f2014ba94e87fca0782bbbd10, type: 3}
+  - {fileID: -5790808434398351896, guid: 66934a1f2014ba94e87fca0782bbbd10, type: 3}
+  m_MinSpeed: 1
+  m_MaxSpeed: 1
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
