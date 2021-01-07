@@ -128,8 +128,11 @@ namespace Game.Player
             }
             
             //If there are characters without completing the level then select the first of them
-            if(m_Characters.Count > 0)
-                ChangeCharacter(m_Characters[0]);
+            if (m_Characters.Count > 0)
+            {
+                m_IndexCharacter = (m_IndexCharacter + 1) % m_Characters.Count;
+                SelectNewCharacter();
+            }
         }
     }
 }

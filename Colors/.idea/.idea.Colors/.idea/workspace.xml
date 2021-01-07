@@ -20,9 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5f1e6b1-a8d1-4d00-9d20-2f091094c61d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/TilemapCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/TilemapCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Traps/Saw/Saw.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Traps/Saw/Saw.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +45,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Player/Finite State Machine/CharacterIdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Color System/ColorManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.3/Runtime/Behaviours/CinemachineTargetGroup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Interfaces/IDestructible.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.3/Runtime/Impulse/CinemachineCollisionImpulseSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/UI/RawImageParallaxEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Traps/Water.cs" root0="FORCE_HIGHLIGHTING" />
@@ -52,6 +57,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/CoinCreatorWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Managers/LevelLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.3/Runtime/Impulse/CinemachineImpulseSource.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Events/Event_OnTriggerExit2D.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Lerp/MoveThroughPoints.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Traps/Ventiler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -87,14 +93,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/UI/RawImageParallaxEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Events/Event_OnTriggerEnter2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/Water.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/UI/TimeUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/UI/HUD.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/TimeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Sound/Sound.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Sound/SoundManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/CameraFollowCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/Character.cs" />
@@ -103,6 +107,10 @@
         <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.3/Runtime/Impulse/CinemachineImpulseSource.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/TilemapCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Events/Event_OnTriggerExit2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Interfaces/IDestructible.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" />
       </list>
     </option>
   </component>
@@ -165,7 +173,9 @@
       <workItem from="1609214604042" duration="3615000" />
       <workItem from="1609530296542" duration="1105000" />
       <workItem from="1609674360145" duration="8904000" />
-      <workItem from="1609865994844" duration="2922000" />
+      <workItem from="1609865994844" duration="4598000" />
+      <workItem from="1610029342091" duration="5003000" />
+      <workItem from="1610056846130" duration="3000" />
     </task>
     <servers />
   </component>

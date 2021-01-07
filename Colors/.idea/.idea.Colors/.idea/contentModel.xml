@@ -56,7 +56,11 @@
             </e>
             <e p="Events" t="Include">
               <e p="Event_OnTriggerEnter2D.cs" t="Include" />
+              <e p="Event_OnTriggerExit2D.cs" t="Include" />
               <e p="PressKeyEvent.cs" t="Include" />
+            </e>
+            <e p="Interfaces" t="Include">
+              <e p="IDestructible.cs" t="Include" />
             </e>
             <e p="Lerp" t="Include">
               <e p="LerpMovement.cs" t="Include" />
