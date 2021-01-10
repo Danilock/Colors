@@ -10,6 +10,7 @@ namespace Game.Coins {
     {
         private CoinManager m_CoinManager;
         [SerializeField] private ColorManager.objColor CoinColor;
+        [SerializeField] private GameObject m_pickParticleEffect;
 
         private void Start()
         {
@@ -22,6 +23,7 @@ namespace Game.Coins {
             {
                 SoundManager.Instance.Play("Coin");
                 m_CoinManager.AddCoins(1, CoinColor);
+                Instantiate(m_pickParticleEffect, transform.position, Quaternion.identity);
                 Destroy(gameObject);
             }
         }
