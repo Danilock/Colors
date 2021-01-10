@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6309509666435880995}
   - component: {fileID: 6525792879451202690}
   - component: {fileID: 5863098688615301113}
+  - component: {fileID: 5683095221595011317}
   m_Layer: 0
   m_Name: Pick Effect
   m_TagString: Untagged
@@ -102,3 +103,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5683095221595011317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6789263512827886752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ccb7e3ecffb65c4a965e2901dcb4e72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

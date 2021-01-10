@@ -557,6 +557,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 118992532}
     m_Modifications:
+    - target: {fileID: 7914882287080900140, guid: b2808bae384bd1f43aa7e9e0007f47a7, type: 3}
+      propertyPath: m_pickParticleEffect
+      value: 
+      objectReference: {fileID: 6789263512827886752, guid: c340e7e89e8376b4d86039658bb690c6, type: 3}
     - target: {fileID: 7914882287080900142, guid: b2808bae384bd1f43aa7e9e0007f47a7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.390212
@@ -5240,6 +5244,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fc9885bc7b71f614db66be2176399037, type: 2}
+    - target: {fileID: 7706175383891355177, guid: 61c0c865643c7604fb6b244089d260ac, type: 3}
+      propertyPath: m_pickParticleEffect
+      value: 
+      objectReference: {fileID: 6789263512827886752, guid: c340e7e89e8376b4d86039658bb690c6, type: 3}
     - target: {fileID: 7706175383891355182, guid: 61c0c865643c7604fb6b244089d260ac, type: 3}
       propertyPath: m_Name
       value: Banana Yellow Coin
@@ -6818,6 +6826,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2812566212419437369, guid: 12c2ea4467cf8b14598dc561a057706e, type: 3}
+      propertyPath: m_pickParticleEffect
+      value: 
+      objectReference: {fileID: 6789263512827886752, guid: c340e7e89e8376b4d86039658bb690c6, type: 3}
     - target: {fileID: 2812566212419437371, guid: 12c2ea4467cf8b14598dc561a057706e, type: 3}
       propertyPath: m_Name
       value: Apple Red Coin

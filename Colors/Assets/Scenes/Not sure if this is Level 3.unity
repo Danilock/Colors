@@ -666,6 +666,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1581121854}
     m_Modifications:
+    - target: {fileID: 7914882287080900140, guid: b2808bae384bd1f43aa7e9e0007f47a7, type: 3}
+      propertyPath: m_pickParticleEffect
+      value: 
+      objectReference: {fileID: 6789263512827886752, guid: c340e7e89e8376b4d86039658bb690c6, type: 3}
     - target: {fileID: 7914882287080900142, guid: b2808bae384bd1f43aa7e9e0007f47a7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.05
@@ -2921,6 +2925,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fc9885bc7b71f614db66be2176399037, type: 2}
+    - target: {fileID: 7706175383891355177, guid: 61c0c865643c7604fb6b244089d260ac, type: 3}
+      propertyPath: m_pickParticleEffect
+      value: 
+      objectReference: {fileID: 6789263512827886752, guid: c340e7e89e8376b4d86039658bb690c6, type: 3}
     - target: {fileID: 7706175383891355182, guid: 61c0c865643c7604fb6b244089d260ac, type: 3}
       propertyPath: m_Name
       value: Coin0 (5)
@@ -3007,6 +3015,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1581121854}
     m_Modifications:
+    - target: {fileID: 7914882287080900140, guid: b2808bae384bd1f43aa7e9e0007f47a7, type: 3}
+      propertyPath: m_pickParticleEffect
+      value: 
+      objectReference: {fileID: 6789263512827886752, guid: c340e7e89e8376b4d86039658bb690c6, type: 3}
     - target: {fileID: 7914882287080900142, guid: b2808bae384bd1f43aa7e9e0007f47a7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.16
@@ -18915,6 +18927,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1581121854}
     m_Modifications:
+    - target: {fileID: 7914882287080900140, guid: b2808bae384bd1f43aa7e9e0007f47a7, type: 3}
+      propertyPath: m_pickParticleEffect
+      value: 
+      objectReference: {fileID: 6789263512827886752, guid: c340e7e89e8376b4d86039658bb690c6, type: 3}
     - target: {fileID: 7914882287080900142, guid: b2808bae384bd1f43aa7e9e0007f47a7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.67
@@ -19347,6 +19363,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2812566212419437369, guid: 12c2ea4467cf8b14598dc561a057706e, type: 3}
+      propertyPath: m_pickParticleEffect
+      value: 
+      objectReference: {fileID: 6789263512827886752, guid: c340e7e89e8376b4d86039658bb690c6, type: 3}
     - target: {fileID: 2812566212419437371, guid: 12c2ea4467cf8b14598dc561a057706e, type: 3}
       propertyPath: m_Name
       value: Coin0 (6)
@@ -19715,6 +19735,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fc9885bc7b71f614db66be2176399037, type: 2}
+    - target: {fileID: 7706175383891355177, guid: 61c0c865643c7604fb6b244089d260ac, type: 3}
+      propertyPath: m_pickParticleEffect
+      value: 
+      objectReference: {fileID: 6789263512827886752, guid: c340e7e89e8376b4d86039658bb690c6, type: 3}
     - target: {fileID: 7706175383891355182, guid: 61c0c865643c7604fb6b244089d260ac, type: 3}
       propertyPath: m_Name
       value: Coin0 (4)
@@ -20334,6 +20358,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2097095823 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9144067734111816739, guid: 773082bd40385c7488ac1b014973e3d7, type: 3}
+  m_PrefabInstance: {fileID: 9144067734353764333}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2097095824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097095823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a54b47bf9f832434e8cf2e516c912d3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {fileID: 1576549808}
+  - {fileID: 1861568643}
+  - {fileID: 885339149}
+  - {fileID: 1423340685}
+  flipX: 0
+  flixY: 0
 --- !u!1 &2113655108
 GameObject:
   m_ObjectHideFlags: 0
@@ -20430,6 +20478,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2812566212419437369, guid: 12c2ea4467cf8b14598dc561a057706e, type: 3}
+      propertyPath: m_pickParticleEffect
+      value: 
+      objectReference: {fileID: 6789263512827886752, guid: c340e7e89e8376b4d86039658bb690c6, type: 3}
     - target: {fileID: 2812566212419437371, guid: 12c2ea4467cf8b14598dc561a057706e, type: 3}
       propertyPath: m_Name
       value: Coin0
@@ -20931,6 +20983,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fc9885bc7b71f614db66be2176399037, type: 2}
+    - target: {fileID: 7706175383891355177, guid: 61c0c865643c7604fb6b244089d260ac, type: 3}
+      propertyPath: m_pickParticleEffect
+      value: 
+      objectReference: {fileID: 6789263512827886752, guid: c340e7e89e8376b4d86039658bb690c6, type: 3}
     - target: {fileID: 7706175383891355182, guid: 61c0c865643c7604fb6b244089d260ac, type: 3}
       propertyPath: m_Name
       value: Coin0
@@ -21094,6 +21150,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1581121854}
     m_Modifications:
+    - target: {fileID: 7914882287080900140, guid: b2808bae384bd1f43aa7e9e0007f47a7, type: 3}
+      propertyPath: m_pickParticleEffect
+      value: 
+      objectReference: {fileID: 6789263512827886752, guid: c340e7e89e8376b4d86039658bb690c6, type: 3}
     - target: {fileID: 7914882287080900142, guid: b2808bae384bd1f43aa7e9e0007f47a7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1300001
