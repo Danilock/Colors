@@ -62,7 +62,9 @@ public class TilemapCreator
     {
         GameObject mainGrid = GameObject.Find("Grid");
         if (mainGrid == null)
-            CreateGrid();
+        {
+            mainGrid = CreateGrid();
+        }
         
         GameObject tilemapOBJ = new GameObject(TilemapName);
 
@@ -83,9 +85,11 @@ public class TilemapCreator
         return tilemap;
     }
 
-    private void CreateGrid()
+    private GameObject CreateGrid()
     {
         GameObject grid = new GameObject("Grid");
         grid.AddComponent<Grid>();
+
+        return grid;
     }
 }
