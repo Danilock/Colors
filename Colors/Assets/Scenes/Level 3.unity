@@ -15443,6 +15443,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7729142141473647444, guid: 0074c7ac70def0b488598e06782fe113, type: 3}
+      propertyPath: nextLevel
+      value: Assets/Scenes/Level 4.unity
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729142141473647444, guid: 0074c7ac70def0b488598e06782fe113, type: 3}
+      propertyPath: sceneSelected
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7729142141845680716, guid: 0074c7ac70def0b488598e06782fe113, type: 3}
       propertyPath: m_SortingLayerID
       value: -1535947495

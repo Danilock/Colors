@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Game.Coins
 {
     public class CoinManager : MonoBehaviour
-    {
+    {    
         public delegate void OnCoinAdded();
         public event OnCoinAdded OnCoinAddedAction;
         #region Coins
