@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
-    private int m_LastLevel;
+    [HideInInspector] public int LastLevel = 1;
     [SerializeField] private Animator m_TransitionAnimator;
     public enum GameState
     {
@@ -75,14 +75,22 @@ public class GameManager : MonoBehaviour
 
     void InitiateLastLevelPrefVariable()
     {
-        m_LastLevel = PlayerPrefs.HasKey("Last Level") ? PlayerPrefs.GetInt("Last Level") : 0;
-        Debug.Log(m_LastLevel);
+        if(PlayerPrefs.HasKey("Last Level"))
+        {
+            LastLevel = PlayerPrefs.GetInt("Last Level");
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Last Level", 1);
+            LastLevel = 1;
+        }
     }
     public void SaveGame(int level)
     {
-        if (level > m_LastLevel)
+        if (level > LastLevel)
         {
             PlayerPrefs.SetInt("Last Level", level);
+            LastLevel = level;
         }
     }
     #endregion

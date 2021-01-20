@@ -20,13 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5f1e6b1-a8d1-4d00-9d20-2f091094c61d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/HUD.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Not sure if this is Level 2.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Not sure if this is Level 2.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Not sure if this is Level 3.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Not sure if this is Level 3.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/UI/HUD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/UI/HUD.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +95,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Events/Event_OnTriggerEnter2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/Water.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/UI/TimeUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/UI/HUD.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Managers/TimeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Sound/Sound.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Sound/SoundManager.cs" />
@@ -106,7 +105,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorCollider.cs" />
         <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.3/Runtime/Impulse/CinemachineImpulseSource.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level Complete System/DoorsManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Events/Event_OnTriggerExit2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Interfaces/IDestructible.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Traps/KillerTrap.cs" />
@@ -114,6 +112,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Coins/CoinObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Events/DestroyMe.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Events/Event_OnStart.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/UI/HUD.cs" />
       </list>
     </option>
   </component>
@@ -180,6 +181,7 @@
       <workItem from="1610029342091" duration="5003000" />
       <workItem from="1610056846130" duration="3000" />
       <workItem from="1610236814897" duration="5777000" />
+      <workItem from="1611111551998" duration="1809000" />
     </task>
     <servers />
   </component>

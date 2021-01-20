@@ -56,6 +56,7 @@
             </e>
             <e p="Events" t="Include">
               <e p="DestroyMe.cs" t="Include" />
+              <e p="Event_OnStart.cs" t="Include" />
               <e p="Event_OnTriggerEnter2D.cs" t="Include" />
               <e p="Event_OnTriggerExit2D.cs" t="Include" />
               <e p="PressKeyEvent.cs" t="Include" />

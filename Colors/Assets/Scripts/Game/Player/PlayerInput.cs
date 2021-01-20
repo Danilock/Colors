@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Game.Player
 {
@@ -29,9 +30,21 @@ namespace Game.Player
 
         public Character CurrentCharacter => m_CurrentCharacter;
 
-        private int m_IndexCharacter = 0;
+        public int IndexCharacter
+        {
+            get;
+            set;
+        }
         private int m_NextCharacter = 1;
         public  static float HorizontalInput { get; private set; }
+
+        #region OnChangeEvent
+
+        public delegate void OnChange();
+
+        public static event OnChange onChange;
+
+        #endregion
 
         private void Awake()
         {
@@ -87,9 +100,9 @@ namespace Game.Player
 
         public void SelectNewCharacter()
         {
-            m_IndexCharacter = (m_IndexCharacter + 1) % m_Characters.Count;
+            IndexCharacter = (IndexCharacter + 1) % m_Characters.Count;
             m_NextCharacter = (m_NextCharacter + 1) % m_Characters.Count;
-            ChangeCharacter(m_Characters[m_IndexCharacter]);//change the character
+            ChangeCharacter(m_Characters[IndexCharacter]);//change the character
             InitializeNextCharacter(m_Characters[m_NextCharacter]);
         }
 
@@ -105,6 +118,8 @@ namespace Game.Player
             m_CurrentCharacter.EnableGhostMaterial(false);
             m_CurrentCharacter.SetIndicator(true);
             m_CurrentCharacter.ChangeIndicatorMaterial(false);
+            
+            onChange?.Invoke();
         }
 
         void InitializeNextCharacter(Character nextCharacter)
@@ -130,7 +145,7 @@ namespace Game.Player
             //If there are characters without completing the level then select the first of them
             if (m_Characters.Count > 0)
             {
-                m_IndexCharacter = (m_IndexCharacter + 1) % m_Characters.Count;
+                IndexCharacter = (IndexCharacter + 1) % m_Characters.Count;
                 SelectNewCharacter();
             }
         }
