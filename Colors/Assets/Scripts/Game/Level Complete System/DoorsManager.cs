@@ -17,6 +17,10 @@ namespace Game.Level_Complete_System
         {
             GameManager.Instance.currentGameState = GameManager.GameState.InGame;
             m_LevelLoader = GetComponent<LevelLoader>();
+
+
+            //Saving the game specifying this was the last level completed
+            GameManager.Instance.SaveGame(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
         public void CheckCompleteCollider(DoorCollider colliderToCheck)
@@ -26,10 +30,6 @@ namespace Game.Level_Complete_System
             if (m_LevelCompleteColliders.Count == 0)
             {
                 SoundManager.Instance?.Play("Level Complete");
-                
-                
-                //Saving the game specifying this was the last level completed
-                GameManager.Instance.SaveGame(SceneManager.GetActiveScene().buildIndex + 1);
                 
                 m_LevelLoader.LoadLevel();
                 

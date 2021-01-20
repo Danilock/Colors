@@ -456,8 +456,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030f3441d99f7bb48bcdd68431537415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: Assets/Scenes/Level 1.unity
-  sceneSelected: 0
+  nextLevel: Assets/Scenes/Level 3.unity
+  sceneSelected: 2
 --- !u!114 &274842514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1305,8 +1305,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030f3441d99f7bb48bcdd68431537415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: Assets/Scenes/Level 1.unity
-  sceneSelected: 0
+  nextLevel: Assets/Scenes/Level 4.unity
+  sceneSelected: 3
 --- !u!114 &1436460290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1594,8 +1594,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030f3441d99f7bb48bcdd68431537415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: Assets/Scenes/Level 1.unity
-  sceneSelected: 0
+  nextLevel: Assets/Scenes/Level 2.unity
+  sceneSelected: 1
 --- !u!114 &1694268406
 MonoBehaviour:
   m_ObjectHideFlags: 0
