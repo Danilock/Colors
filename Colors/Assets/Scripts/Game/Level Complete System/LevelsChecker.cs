@@ -17,7 +17,6 @@ public class LevelsChecker : MonoBehaviour
         for(int i = 0; i < GameManager.Instance.LastLevel; i++)
         {
             _LevelButtons[i].interactable = true;
-            Debug.Log(_LevelButtons[i].name + "Set Interactive");
         }
     }
 }

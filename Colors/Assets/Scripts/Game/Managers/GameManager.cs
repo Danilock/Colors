@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 {
     [HideInInspector] public int LastLevel = 1;
     [SerializeField] private Animator m_TransitionAnimator;
+    [SerializeField] private GameObject m_PauseCanvas; 
     public enum GameState
     {
         Paused,
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
     {
         get
         {
-            if(_instance == null)
+            if (_instance == null)
                 print("Manager is Null");
 
             return _instance;
@@ -47,7 +48,18 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
         }
     }
-    
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Pause"))
+        {
+            if (currentGameState == GameState.InGame)
+                PauseGame();
+            else if (currentGameState == GameState.Paused)
+                ResumeGame();
+        }
+    }
+
     #region Level Management
     public void LoadScene(string sceneName)
     {
@@ -58,8 +70,8 @@ public class GameManager : MonoBehaviour
     private IEnumerator AsyncScene(string sceneToAsync)
     {
         m_TransitionAnimator.SetTrigger("Transition");
-        
-        yield return  new WaitForSeconds(1.5f);
+
+        yield return new WaitForSeconds(1.5f);
 
         SceneManager.LoadScene(sceneToAsync);
     }
@@ -75,7 +87,7 @@ public class GameManager : MonoBehaviour
 
     void InitiateLastLevelPrefVariable()
     {
-        if(PlayerPrefs.HasKey("Last Level"))
+        if (PlayerPrefs.HasKey("Last Level"))
         {
             LastLevel = PlayerPrefs.GetInt("Last Level");
         }
@@ -94,4 +106,32 @@ public class GameManager : MonoBehaviour
         }
     }
     #endregion
+
+    private void OnApplicationFocus(bool focus)
+    {
+        if (currentGameState == GameState.InMenu || currentGameState == GameState.Loading)
+            return;
+        SendMessage(focus ? "ResumeGame" : "PauseGame");
+    }
+
+    public void PauseGame()
+    {
+        m_PauseCanvas?.SetActive(true);
+        currentGameState = GameState.Paused;
+        Time.timeScale = 0f;
+    }
+
+    public void ResumeGame()
+    {
+        m_PauseCanvas?.SetActive(false);
+        currentGameState = GameState.InGame;
+        Time.timeScale = 1f;
+    }
+
+    public void QuitGame()
+    {
+        LoadScene("Menu");
+        currentGameState = GameState.Loading;
+        Time.timeScale = 1f;
+    }
 }

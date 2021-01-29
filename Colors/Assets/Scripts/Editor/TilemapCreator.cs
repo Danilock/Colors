@@ -6,6 +6,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
+#if UNITY_EDITOR
 public class TilemapCreator 
 {
     [MenuItem("MyTools/Create Tilemaps.../Yellow Tilemap")]
@@ -93,3 +94,4 @@ public class TilemapCreator
         return grid;
     }
 }
+#endif

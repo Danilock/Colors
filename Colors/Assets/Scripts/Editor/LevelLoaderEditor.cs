@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+#if UNITY_EDITOR
 [CustomEditor(typeof(LevelLoader))]
 public class LevelLoaderEditor : Editor
 {
@@ -30,3 +31,4 @@ public class LevelLoaderEditor : Editor
         serializedObject.ApplyModifiedProperties();
     }
 }
+#endif

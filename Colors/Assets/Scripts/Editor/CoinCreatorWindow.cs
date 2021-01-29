@@ -7,6 +7,7 @@ using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine;
 
+#if UNITY_EDITOR
 public class CoinCreatorWindow : EditorWindow
 {
     private Sprite m_CoinImage;
@@ -70,3 +71,4 @@ public class CoinCreatorWindow : EditorWindow
         }
     }
 }
+#endif
