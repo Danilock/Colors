@@ -11,12 +11,22 @@ namespace Game.Level_Complete_System
     [RequireComponent(typeof(LevelLoader))]
     public class DoorsManager : MonoBehaviour
     {
+        #region DoorsManager Events
+        public delegate void OnLevelStartTrigger();
+        public static event OnLevelStartTrigger OnLevelStart;
+
+        public delegate void OnLevelCompleteTrigger();
+        public static event OnLevelCompleteTrigger OnLevelComplete;
+        #endregion
+
         [SerializeField] private List<DoorCollider> m_LevelCompleteColliders;
         private LevelLoader m_LevelLoader;
         private void Start()
         {
             GameManager.Instance.currentGameState = GameManager.GameState.InGame;
             m_LevelLoader = GetComponent<LevelLoader>();
+
+            OnLevelStart?.Invoke();
         }
 
         public void CheckCompleteCollider(DoorCollider colliderToCheck)
@@ -31,6 +41,7 @@ namespace Game.Level_Complete_System
 
                 //Saving the game specifying this was the last level completed
                 GameManager.Instance.SaveGame(SceneManager.GetActiveScene().buildIndex + 1);
+                OnLevelComplete?.Invoke();
             }
         }
     }
