@@ -14,11 +14,7 @@ namespace Game.Sound
         {
             _LevelMusicAnimator = GetComponent<Animator>();
             _DoorsManager = FindObjectOfType<DoorsManager>();
-        }
 
-
-        private void OnEnable()
-        {
             _DoorsManager.OnLevelStart += ShowSound;
             _DoorsManager.OnLevelComplete += HideSound;
         }

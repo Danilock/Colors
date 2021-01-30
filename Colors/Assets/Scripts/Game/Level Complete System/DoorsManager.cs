@@ -13,10 +13,10 @@ namespace Game.Level_Complete_System
     {
         #region DoorsManager Events
         public delegate void OnLevelStartTrigger();
-        public static event OnLevelStartTrigger OnLevelStart;
+        public event OnLevelStartTrigger OnLevelStart;
 
         public delegate void OnLevelCompleteTrigger();
-        public static event OnLevelCompleteTrigger OnLevelComplete;
+        public event OnLevelCompleteTrigger OnLevelComplete;
         #endregion
 
         [SerializeField] private List<DoorCollider> m_LevelCompleteColliders;
