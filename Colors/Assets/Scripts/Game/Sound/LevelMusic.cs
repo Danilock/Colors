@@ -8,23 +8,25 @@ namespace Game.Sound
     public class LevelMusic : MonoBehaviour
     {
         Animator _LevelMusicAnimator;
+        DoorsManager _DoorsManager;
         // Start is called before the first frame update
         void Start()
         {
             _LevelMusicAnimator = GetComponent<Animator>();
+            _DoorsManager = FindObjectOfType<DoorsManager>();
         }
 
 
         private void OnEnable()
         {
-            DoorsManager.OnLevelStart += ShowSound;
-            DoorsManager.OnLevelComplete += HideSound;
+            _DoorsManager.OnLevelStart += ShowSound;
+            _DoorsManager.OnLevelComplete += HideSound;
         }
 
         private void OnDisable()
         {
-            DoorsManager.OnLevelStart -= ShowSound;
-            DoorsManager.OnLevelComplete -= HideSound;
+            _DoorsManager.OnLevelStart -= ShowSound;
+            _DoorsManager.OnLevelComplete -= HideSound;
         }
 
         void ShowSound() => _LevelMusicAnimator.Play("LevelMusicIn");
